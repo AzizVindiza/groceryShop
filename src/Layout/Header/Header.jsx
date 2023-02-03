@@ -4,6 +4,7 @@ import "./Header.scss"
 import {Link} from "react-router-dom";
 import Catalog from "./Catolog/Catalog";
 import Search from "./Search/Search";
+import User from "./User/User";
 
 const Header = () => {
     return (
@@ -55,7 +56,7 @@ const Header = () => {
                         Корзина</Link>
 
                 </nav>
-
+                <User/>
             </div>
         </header>
     );
