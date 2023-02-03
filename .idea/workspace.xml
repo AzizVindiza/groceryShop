@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f7a356d-b451-4233-8815-88745c42ac03" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Comment/Comment.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Comment/comment.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Form/Form.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Form/form.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Search/Search.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Search/img/food.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Search/search.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Comment/comment.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Comment/comment.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Form/form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Form/form.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/About/About.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About/About.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Contacts/Contacts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Contacts/Contacts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/base/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/mixins.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +47,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\project\groceryShop\src\pages\Search\img" />
       <recent name="C:\Users\User\Desktop\project\groceryShop\src\Components\Form" />
     </key>
   </component>
@@ -64,7 +65,8 @@
       <workItem from="1675177746006" duration="89000" />
       <workItem from="1675177995245" duration="92000" />
       <workItem from="1675243909820" duration="153000" />
-      <workItem from="1675257621472" duration="8353000" />
+      <workItem from="1675257621472" duration="9267000" />
+      <workItem from="1675421296356" duration="3484000" />
     </task>
     <servers />
   </component>
