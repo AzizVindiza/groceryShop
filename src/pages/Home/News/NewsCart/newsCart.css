@@ -1,0 +1,22 @@
+/* Error: Missing argument $f-color.
+ *   ,--> newsCart.scss
+ * 5 |       @include text(400,12px,150%,#8F8F8F);
+ *   |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation
+ *   '
+ *   ,--> ..\..\..\..\scss\base\mixins.scss
+ * 2 | @mixin text($f-family,$f-weight,$f-size,$f-height,$f-color){
+ *   |        ==================================================== declaration
+ *   '
+ *   newsCart.scss 5:7  text()
+ *   newsCart.scss 5:7  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Missing argument $f-color.\a   \250c \2500 \2500 > newsCart.scss\a 5 \2502        @include text(400,12px,150%,#8F8F8F);\d\a   \2502        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation\a   \2575 \a   \250c \2500 \2500 > ..\\..\\..\\..\\scss\\base\\mixins.scss\a 2 \2502  @mixin text($f-family,$f-weight,$f-size,$f-height,$f-color){\d\a   \2502         \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a   \2575 \a   newsCart.scss 5:7  text()\a   newsCart.scss 5:7  root stylesheet";
+}

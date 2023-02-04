@@ -1,0 +1,22 @@
+/* Error: Missing argument $f-color.
+ *   ,--> deliver.scss
+ * 16|     @include text(700,48px,150%,rgba(65, 65, 65, 1))
+ *   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation
+ *   '
+ *   ,--> ..\..\..\scss\base\mixins.scss
+ * 2 | @mixin text($f-family,$f-weight,$f-size,$f-height,$f-color){
+ *   |        ==================================================== declaration
+ *   '
+ *   deliver.scss 16:5  text()
+ *   deliver.scss 16:5  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Missing argument $f-color.\a   \250c \2500 \2500 > deliver.scss\a 16\2502      @include text(700,48px,150%,rgba(65, 65, 65, 1))\d\a   \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation\a   \2575 \a   \250c \2500 \2500 > ..\\..\\..\\scss\\base\\mixins.scss\a 2 \2502  @mixin text($f-family,$f-weight,$f-size,$f-height,$f-color){\d\a   \2502         \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a   \2575 \a   deliver.scss 16:5  text()\a   deliver.scss 16:5  root stylesheet";
+}
