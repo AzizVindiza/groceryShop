@@ -26,7 +26,7 @@ body{
       margin-bottom: 35px;
     }
     &__title{
-      @include text(700,24px,150%,#414141);
+      @include text("Rubik",700,24px,150%,#414141);
       margin:0 auto 40px;
     }
     &__textarea{
@@ -43,7 +43,7 @@ body{
       background: #FCD5BA;
       border-radius: 4px;
       cursor: pointer;
-      @include text(400,24px,150%,#FF6633);
+      @include text("Rubik",400,24px,150%,#FF6633);
       margin-bottom: 32px;
     }
     &__exit{

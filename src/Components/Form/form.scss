@@ -26,7 +26,7 @@ body{
       margin-bottom: 35px;
     }
     &__title{
-      @include text(700,24px,150%,#414141);
+      @include text("Rubik",700,24px,150%,#414141);
       margin:0 auto 40px;
     }
     &__label{
@@ -44,18 +44,18 @@ body{
       border: 1px solid #70C05B;
       box-shadow: 4px 8px 16px rgba(112, 192, 91, 0.2);
       border-radius: 4px;
-      @include text(400,24px,150%,#414141);
+      @include text("Rubik",400,24px,150%,#414141);
     }
     &__error{
       margin-bottom: 10px;
-      @include text(600,20px,100%,#414141);
+      @include text("Rubik",600,20px,100%,#414141);
     }
     &__btn{
       padding: 16px 32px;
       background: #FCD5BA;
       border-radius: 4px;
       cursor: pointer;
-      @include text(400,24px,150%,#FF6633);
+      @include text("Rubik",400,24px,150%,#FF6633);
       margin-bottom: 32px;
     }
     &__checkBoxes{
@@ -66,11 +66,11 @@ body{
         display: none;
       }
       label{
-        @include text(400,12px,150%,#606060);
+        @include text("Rubik",400,12px,150%,#606060);
         cursor: pointer;
       }
       input:checked+label{
-        @include text(400,12px,150%,#70C05B);
+        @include text("Rubik",400,12px,150%,#70C05B);
         border: 1px solid #70C05B;
         padding: 8px 16px;
       }

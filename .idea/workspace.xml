@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f7a356d-b451-4233-8815-88745c42ac03" name="Changes" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/pages/Product/ComponentsProduct/ProductCart/ProductCart.jsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/pages/Product/ComponentsProduct/ProductCart/productCart.css" afterDir="false" />
@@ -28,6 +29,25 @@
       <change beforePath="$PROJECT_DIR$/src/pages/Product/ProductSame/ProductSame.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Product/ProductSame/ProductSame.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Product/ProductSame/productSame.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Product/ProductSame/productSame.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Product/product.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Product/product.scss" afterDir="false" />
+=======
+<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/src/pages/Search/Search.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Search/img/food.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Search/search.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Comment/comment.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Comment/comment.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Form/form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Form/form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/About/About.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/About/About.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/base/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/mixins.scss" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/pages/Product/ComponentsProduct/ProductImage/cat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Product/ComponentsProduct/ProductImage/small_cat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Product/Product.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Product/Product.jsx" afterDir="false" />
+>>>>>>> 30a8a673b1be5f41635727d14e756f11130276b4
+>>>>>>> da67738fff01283cff7afc74063510c6d8e7eb1c
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +91,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+<<<<<<< HEAD
+      <recent name="C:\Users\User\Desktop\project\groceryShop\src\pages\Search\img" />
+=======
       <recent name="C:\Users\Legion\Desktop\project\groceryShop\src\pages\Product\ComponentsProduct\ProductImage" />
+>>>>>>> 30a8a673b1be5f41635727d14e756f11130276b4
       <recent name="C:\Users\User\Desktop\project\groceryShop\src\Components\Form" />
     </key>
   </component>
@@ -89,10 +113,19 @@
       <workItem from="1675177746006" duration="89000" />
       <workItem from="1675177995245" duration="92000" />
       <workItem from="1675243909820" duration="153000" />
+<<<<<<< HEAD
+      <workItem from="1675257621472" duration="9267000" />
+      <workItem from="1675421296356" duration="3484000" />
+=======
       <workItem from="1675257621472" duration="8353000" />
+<<<<<<< HEAD
       <workItem from="1675351364075" duration="16877000" />
       <workItem from="1675441880236" duration="7372000" />
       <workItem from="1675450672559" duration="3910000" />
+=======
+      <workItem from="1675351364075" duration="13829000" />
+>>>>>>> 30a8a673b1be5f41635727d14e756f11130276b4
+>>>>>>> da67738fff01283cff7afc74063510c6d8e7eb1c
     </task>
     <servers />
   </component>
