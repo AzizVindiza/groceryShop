@@ -1,0 +1,86 @@
+@import "./src/scss/base/mixins";
+body{
+  overflow: hidden;
+}
+.popup{
+  position: fixed;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: rgba(252, 213, 186, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__form{
+    background: #FFFFFF;
+    box-shadow: 8px 16px 32px rgba(255, 102, 51, 0.2);
+    border-radius: 4px;
+     display: flex;
+  }
+  .form{
+    position: relative;
+    padding: 72px 80px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     .form__label:last-of-type{
+      margin-bottom: 35px;
+    }
+    &__title{
+      @include text("Rubik",700,24px,150%,#414141);
+      margin:0 auto 40px;
+    }
+    &__label{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    &__field{
+      padding: 12px 16px;
+      width: 290px;
+      height: 60px;
+      margin-bottom: 10px;
+      background: #FFFFFF;
+      border: 1px solid #70C05B;
+      box-shadow: 4px 8px 16px rgba(112, 192, 91, 0.2);
+      border-radius: 4px;
+      @include text("Rubik",400,24px,150%,#414141);
+    }
+    &__error{
+      margin-bottom: 10px;
+      @include text("Rubik",600,20px,100%,#414141);
+    }
+    &__btn{
+      padding: 16px 32px;
+      background: #FCD5BA;
+      border-radius: 4px;
+      cursor: pointer;
+      @include text("Rubik",400,24px,150%,#FF6633);
+      margin-bottom: 32px;
+    }
+    &__checkBoxes{
+      display: flex;
+      align-items: center;
+      column-gap: 24px;
+      input{
+        display: none;
+      }
+      label{
+        @include text("Rubik",400,12px,150%,#606060);
+        cursor: pointer;
+      }
+      input:checked+label{
+        @include text("Rubik",400,12px,150%,#70C05B);
+        border: 1px solid #70C05B;
+        padding: 8px 16px;
+      }
+    }
+    &__exit{
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 8px;
+      cursor: pointer;
+    }
+  }
+}

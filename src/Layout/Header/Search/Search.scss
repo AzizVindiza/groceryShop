@@ -1,0 +1,15 @@
+.searchProduct{
+  border: 1px solid #70C05B;
+  border-radius: 4px;
+  padding: 8px 8px 8px 16px;
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  &__input{
+    width: 317px;
+  }
+  &__btn{
+    background: #FFFFFF;
+    cursor: pointer;
+  }
+}

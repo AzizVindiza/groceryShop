@@ -11,6 +11,7 @@ import Contacts from "./pages/Contacts/Contacts";
 import About from "./pages/About/About";
 import Vacancies from "./pages/Vacancies/Vacancies";
 import Cart from "./pages/Cart/Cart";
+import Search from "./pages/Search/Search";
 
 import "./scss/style.scss"
 const App = () => {
@@ -33,6 +34,8 @@ const App = () => {
                {/*Милана*/}
                <Route path={"cart"} element={<Cart/>}/>
                {/*Адилет*/}
+               <Route path={"search"} element={<Search/>}/>
+               {/*Руслан*/}
            </Route>
        </Routes>
     );

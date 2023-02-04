@@ -1,0 +1,17 @@
+.searchProduct {
+  border: 1px solid #70C05B;
+  border-radius: 4px;
+  padding: 8px 8px 8px 16px;
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+.searchProduct__input {
+  width: 317px;
+}
+.searchProduct__btn {
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Search.css.map */

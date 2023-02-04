@@ -1,0 +1,11 @@
+.promotion{
+  &__discount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__wrapper{
+    display: flex;
+
+  }
+}

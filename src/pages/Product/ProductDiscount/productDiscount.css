@@ -1,0 +1,10 @@
+.promotion__discount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.promotion__wrapper {
+  display: flex;
+}
+
+/*# sourceMappingURL=productDiscount.css.map */
