@@ -15,9 +15,86 @@
   "products": [
     {
       "id": 1,
-      "name": "",
-      "status": "new"
+      "img" : "./assets/products/img/bliny.png",
+      "price":"44,50",
+      "name": "Г/Ц Блинчики с мясом вес, Россия",
+      "status": "new",
+      "discount": true,
+      "discountPercent": "50%"
+    },
+    {
+      "id": 2,
+      "img" : "./assets/products/img/milk/png",
+      "price":"55,50",
+      "name": "Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...",
+      "status": "new",
+      "discount": true,
+      "discountPercent": "50%"
+    },
+    {
+      "id": 3,
+      "img" : "./assets/products/img/suasage-chees.png",
+      "price":"58,50",
+      "name": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
+      "status": "new",
+      "discount": true,
+      "discountPercent": "50%"
+    },
+    {
+      "id": 4,
+      "img" : "./assets/products/img/jam-rogachev.png",
+      "price":"44,50",
+      "name": "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
+      "status": "new",
+      "discount": true,
+      "discountPercent": "50%"
+    },
+    {
+      "id": 5,
+      "img" : "./assets/products/img/kombayn.png",
+      "price":"74,50",
+      "name": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "status": "new",
+      "discount": false,
+      "discountPercent": 0
+    },
+    {
+      "id": 6,
+      "img" : "./assets/products/img/bliny.png",
+      "price":"44,50",
+      "name": "Г/Ц Блинчики с мясом вес, Россия",
+      "status": "new",
+      "discount": false,
+      "discountPercent": 0
+    },
+    {
+      "id": 7,
+      "img" : "./assets/products/img/kzs.png",
+      "price":"139,99",
+      "name": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "status": "new",
+      "discount": false,
+      "discountPercent": 0
+    },
+    {
+      "id": 8,
+      "img" : "./assets/products/img/milk-rogachev",
+      "price":"77,99",
+      "name": "Молоко сгущенное РОГАЧЕВ Егорка, цельное с сахаром...",
+      "status": "new",
+      "discount":false,
+      "discountPercent": 0
+    },
+    {
+      "id": 9,
+      "img" : "./assets/products/img/butter.png",
+      "price":"192,99",
+      "name": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "status": "new",
+      "discount": false,
+      "discountPercent": 0
     }
+
   ],
   "list-of-categories": [
     {
