@@ -13,6 +13,6 @@
     height: 200px;
   }
   &__title{
-    @include text(700,48px,150%,rgba(65, 65, 65, 1))
+    @include text("Rubik",700,48px,150%,rgba(65, 65, 65, 1))
   }
 }

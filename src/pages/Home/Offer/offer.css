@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+.offer {
+  background: rgb(249, 244, 226);
+}
+.offer .container {
+  padding: 0 0 120px 0;
+}
+.offer__title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  color: #414141;
+  margin: 0 0 40px 0;
+}
+.offer__wrapper {
+  display: flex;
+  column-gap: 40px;
+}
+.offer__box {
+  display: flex;
+  align-items: center;
+  background: #FCD5BA;
+  padding: 7px 31px 8px 40px;
+  border-radius: 4px;
+  width: 584px;
+  box-shadow: 0px 8px 16px rgba(202, 147, 96, 0.5);
+}
+.offer__block {
+  background: #E5FFDE;
+  display: flex;
+  column-gap: 51px;
+  align-items: center;
+  padding: 14px 42px 16px 21px;
+  width: 584px;
+}
+.offer__subtitle {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  color: #414141;
+  width: 258px;
+}
+.offer__txt {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #414141;
+  width: 258px;
+}
+.offer__img {
+  width: 206px;
+  height: 138px;
+}
+
+/*# sourceMappingURL=offer.css.map */

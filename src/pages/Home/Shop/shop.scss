@@ -5,7 +5,7 @@
     padding: 0 0 40px 0;
   }
   &__title{
-     @include text(700,36px,150%,#414141);
+     @include text("Rubik",700,36px,150%,#414141);
      margin: 0 0 40px 0;
   }
   &__city{
@@ -16,13 +16,13 @@
   &__btn{
     padding: 8px 13px;
     background:  #F3F2F1;
-    @include text(400,12px,150%,#606060);
+    @include text("Rubik",400,12px,150%,#606060);
     border-radius: 4px;
   }
   &__active{
     padding: 8px 13px;
     background:  #70C05B;;
-    @include text(400,12px,150%,#ffffffff);
+    @include text("Rubik",400,12px,150%,#ffffffff);
     border-radius: 4px;
   }
   &__iframe{

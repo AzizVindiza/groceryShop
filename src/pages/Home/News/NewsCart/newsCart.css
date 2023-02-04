@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+.newsCart__subtitle {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #8F8F8F;
+  width: 356px;
+  margin: 0 0 10px 10px;
+}
+.newsCart__text {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #8F8F8F;
+  width: 316px;
+  margin: 0 0 10px 10px;
+}
+.newsCart__txt {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #414141;
+  width: 356px;
+  margin: 0 0 10px 10px;
+}
+.newsCart__btn {
+  background: #E5FFDE;
+  padding: 8px 14px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #70C05B;
+  border-radius: 5px;
+  margin: 0 0 0 10px;
+}
+.newsCart__block {
+  background: rgb(255, 255, 255);
+  width: 376px;
+  padding: 0 0 10px 0;
+}
+
+/*# sourceMappingURL=newsCart.css.map */

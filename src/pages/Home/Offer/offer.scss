@@ -5,7 +5,7 @@
      padding:0 0 120px 0;
   }
   &__title{
-    @include text(700,36px,150%,#414141);
+    @include text("Rubik",700,36px,150%,#414141);
     margin:0 0 40px 0;
   }
   &__wrapper{
@@ -30,11 +30,11 @@
     width: 584px;
   }
   &__subtitle{
-    @include text(700,24px,150%, #414141);
+    @include text("Rubik",700,24px,150%, #414141);
     width: 258px;
   }
   &__txt{
-    @include text(400,16px,150%,#414141);
+    @include text("Rubik",400,16px,150%,#414141);
     width: 258px;
   }
   &__img{

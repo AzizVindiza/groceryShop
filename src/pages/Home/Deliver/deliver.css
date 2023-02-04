@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+.deliver {
+  background: url("./img/Group 7100.png") no-repeat;
+}
+.deliver__wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  justify-content: center;
+}
+.deliver__picture {
+  width: 200px;
+  height: 200px;
+}
+.deliver__title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 150%;
+  color: rgb(65, 65, 65);
+}
+
+/*# sourceMappingURL=deliver.css.map */

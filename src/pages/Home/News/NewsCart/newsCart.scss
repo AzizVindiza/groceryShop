@@ -2,24 +2,24 @@
 
 .newsCart{
     &__subtitle{
-      @include text(400,12px,150%,#8F8F8F);
+      @include text("Rubik",400,12px,150%,#8F8F8F);
       width: 356px;
       margin:  0 0 10px 10px;
     }
   &__text{
-    @include text(400,16px,150%,#8F8F8F);
+    @include text("Rubik",400,16px,150%,#8F8F8F);
     width: 316px;
     margin:  0 0 10px 10px;
   }
   &__txt{
-    @include text(700,18px,150%,#414141);
+    @include text("Rubik",700,18px,150%,#414141);
     width: 356px;
     margin:  0 0 10px 10px;
   }
   &__btn{
     background: #E5FFDE;
     padding: 8px 14px;
-    @include text(400,16px,150%,#70C05B);
+    @include text("Rubik",400,16px,150%,#70C05B);
     border-radius: 5px;
     margin:0 0 0 10px ;
   }

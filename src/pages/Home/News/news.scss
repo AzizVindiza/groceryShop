@@ -15,10 +15,10 @@
     column-gap: 20px;
   }
   &__title{
-    @include text(700,36px,150%,#414141)
+    @include text("Rubik",700,36px,150%,#414141)
   }
   &__all{
-    @include text(400,16px,150%,#606060);
+    @include text("Rubik",400,16px,150%,#606060);
   }
   &__wrapper{
     display: flex;
