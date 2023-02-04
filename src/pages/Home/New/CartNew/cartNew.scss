@@ -1,0 +1,61 @@
+@import "../../../../scss/base/mixins";
+
+.addCart{
+  &__txt{
+    @include text(400,16px,150%, #414141);
+    width: 206px;
+    margin: 0 0 8px 0;
+  }
+  &__starts{
+    display:flex;
+    column-gap: 5px;
+    margin: 0 0 8px 0;
+  }
+  &__box{
+    width: 272px;
+    padding:0 9px 9px 9px ;
+    background: #ffffffff;
+    border-radius: 6px;
+    position: relative;
+  }
+  &__cart{
+    @include text(400,12px,150%,#BFBFBF)
+  }
+  &__btn{
+    @include text(400,16px,150%, #70C05B);
+    padding: 10px 0 ;
+    width: 100%;
+    border: 2px solid #70C05B;
+    border-radius: 8px;
+    background: transparent;
+    &:hover{
+      background: #FF6633;
+      color: #ffffff;
+      border:2px solid #FF6633;
+    }
+  }
+  &__pic{
+    width:100%;
+    margin: 0 0 8px 0;
+  }
+  &__heart{
+    position: absolute;
+    right: 3px;
+    top: 3px;
+  }
+  &__num{
+    width: 40px;
+    height: 24px;
+    background: #FF6633;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    position:absolute;
+    top:120px;
+    left:8px;
+  }
+  &__move{
+    @include text(400,16px,150%,#ffffff)
+  }
+}

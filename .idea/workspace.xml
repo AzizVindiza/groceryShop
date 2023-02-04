@@ -1,11 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3f7a356d-b451-4233-8815-88745c42ac03" name="Changes" comment="" />
+    <list default="true" id="3f7a356d-b451-4233-8815-88745c42ac03" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Deliver/Deliver.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Deliver/deliver.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Deliver/img/Group 7100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Deliver/img/podarochnaya-korzina-s-produktami-700x700.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/New/CartNew/CartNew.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/New/CartNew/cartNew.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/New/New.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/New/new.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/News/News.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/News/NewsCart/NewsCart.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/News/NewsCart/image 5 (2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/News/NewsCart/newsCart.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/News/news.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Offer/Offer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Offer/img/basket.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Offer/img/smile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Offer/offer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Popular/Popular.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Popular/popular.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Shop/Shop.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Shop/shop.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Stock/Stock.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Stock/img/image (3).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Stock/stock.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Stock/stockCart/StockCart.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Stock/stockCart/stockCart.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Home.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,12 +60,22 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Notnik_kg/Desktop/project/groceryShop/src/pages/Home/News/NewsCart&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Notnik_kg\Desktop\project\groceryShop\src\pages\Home\News\NewsCart" />
+      <recent name="C:\Users\Notnik_kg\Desktop\project\groceryShop\src\pages\Home\Offer\img" />
+      <recent name="C:\Users\Notnik_kg\Desktop\project\groceryShop\src\pages\Home\Stock\img" />
+      <recent name="C:\Users\Notnik_kg\Desktop\project\groceryShop\src\pages\Home\Deliver\img" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -39,10 +86,38 @@
       <updated>1675177744716</updated>
       <workItem from="1675177746006" duration="89000" />
       <workItem from="1675177995245" duration="92000" />
+      <workItem from="1675178836365" duration="1009000" />
+      <workItem from="1675239487145" duration="7557000" />
+      <workItem from="1675331759329" duration="8039000" />
+      <workItem from="1675436566119" duration="5668000" />
+      <workItem from="1675502338533" duration="2892000" />
+      <workItem from="1675515773041" duration="175000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pages/Home/Shop/Shop.jsx</url>
+          <line>3</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
