@@ -2,11 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f7a356d-b451-4233-8815-88745c42ac03" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/Product/ComponentsProduct/ProductImage/cat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Product/ComponentsProduct/ProductImage/small_cat.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Product/ComponentsProduct/ProductCart/ProductCart.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Product/ComponentsProduct/ProductCart/productCart.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Product/ComponentsProduct/ProductCart/productCart.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Product/ComponentsProduct/ProductCart/productCart.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Product/ComponentsProduct/ProductImage/blin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Product/ComponentsProduct/ProductImage/favoriteHeart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Product/ComponentsProduct/ProductImage/rating.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Product/ComponentsProduct/ProductSale/ProductSale.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Product/ComponentsProduct/ProductSale/productSale.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Product/ComponentsProduct/ProductSale/productSale.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Product/ComponentsProduct/ProductSale/productSale.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Product/ProductDiscount/productDiscount.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Product/ProductDiscount/productDiscount.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Product/ProductReviews/productReviews.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Product/ProductReviews/productReviews.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Product/ProductSame/productSame.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Product/ProductSame/productSame.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Product/Product.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Product/Product.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Product/ProductDiscount/ProductDiscount.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Product/ProductDiscount/ProductDiscount.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Product/ProductDiscount/productDiscount.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Product/ProductDiscount/productDiscount.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Product/ProductReviews/ProductReviews.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Product/ProductReviews/ProductReviews.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Product/ProductReviews/productReviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Product/ProductReviews/productReviews.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Product/ProductSame/ProductSame.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Product/ProductSame/ProductSame.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Product/ProductSame/productSame.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Product/ProductSame/productSame.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Product/product.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Product/product.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,21 +53,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Legion\Desktop\project\groceryShop\src\pages\Product\ComponentsProduct\ProductImage" />
@@ -68,7 +90,9 @@
       <workItem from="1675177995245" duration="92000" />
       <workItem from="1675243909820" duration="153000" />
       <workItem from="1675257621472" duration="8353000" />
-      <workItem from="1675351364075" duration="13829000" />
+      <workItem from="1675351364075" duration="16877000" />
+      <workItem from="1675441880236" duration="7372000" />
+      <workItem from="1675450672559" duration="3910000" />
     </task>
     <servers />
   </component>
@@ -85,5 +109,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pages/Product/ProductReviews/ProductReviews.jsx</url>
+          <line>29</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

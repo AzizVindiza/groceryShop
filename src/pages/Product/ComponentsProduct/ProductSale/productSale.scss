@@ -1,0 +1,131 @@
+.cart{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  margin-bottom: 120px;
+
+  &__img{
+    position: relative;
+  }
+  &__favorite{
+
+    position: absolute;
+    top: 5px;
+    right: 20px;
+
+
+
+
+
+  }
+  &__discount{
+    position: absolute;
+    width: 50px;
+    padding: 8px;
+    background: red;
+    bottom: 10px;
+    left: 5px;
+  }
+  &__price{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+
+    &-new {
+      display: flex;
+      flex-direction: column;
+      font-family: 'Rubik',sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 150%;
+
+      color: #414141;
+
+
+
+    }
+    &-old{
+      font-family: 'Rubik',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      /* identical to box height, or 24px */
+
+      display: flex;
+      align-items: center;
+
+      /* Grayscale / Hardest */
+
+      color: #606060;
+
+
+
+    }
+    &-text{
+      position: absolute;
+
+      font-family: 'Rubik',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 150%;
+      /* identical to box height, or 18px */
+
+
+      /* Grayscale / Light */
+
+      color: #BFBFBF;
+
+
+    }
+
+  }
+  &__text{
+    width: 256px;
+    font-family: 'Rubik',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    /* identical to box height, or 27px */
+
+
+    /* Main/onSurface */
+
+    color: #414141;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  &__rating{
+    margin: 8px 0;
+  }
+  &__btn{
+    display: flex;
+    width: 240px;
+    height: 24px;
+    justify-content: center;
+    padding: 16px;
+
+    color: #70C05B;
+    align-items: center;
+    text-align: center;
+    /* Desc/Text/S */
+
+    font-family: 'Rubik',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+  }
+
+}
