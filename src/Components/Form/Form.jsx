@@ -1,7 +1,8 @@
 import React, {useRef, useState} from 'react';
-import {useLocation} from "react-router-dom";
+import {json, useLocation} from "react-router-dom";
 import {useForm} from "react-hook-form";
 import "./form.scss"
+import axios from "axios";
 
 
 const Form = () => {
@@ -20,10 +21,47 @@ const Form = () => {
         }
     } = useForm({mode:"onBlur"})
 
+    const registerUser = (data) => {
+        axios.post("http://localhost:8080/register",{
+            ...data,
+            orders: [],
+            favorite: [],
+            cart: []
+        }).then((rec)=>{
+            localStorage.setItem("user",JSON.stringify({
+                token:rec.data.accessToken,
+                ...rec.data
+            }))
+            reset()
+            setDisplay("none")
+        }).catch((errors) =>{
+            console.log(errors)
+        })
+    }
+
+
+
+    const loginUser = (data) => {
+        axios.post("http://localhost:8080/login",{
+            ...data
+        }).then((rec)=>{
+            localStorage.setItem("user",JSON.stringify({
+                token:rec.data.accessToken,
+                ...rec.data
+            }))
+            reset()
+            setDisplay("none")
+        }).catch((errors) =>{
+            console.log(errors)
+        })
+    }
+
+
+
     return (
         <div className="popup" style={{display:display}}>
             <div className="popup__form">
-                <form noValidate className="form">
+                <form noValidate className="form" onSubmit={handleSubmit()}>
                     <h2 className='form__title'>
                         { local === 'register'? "Зарегистрироваться":'Войти'}
                     </h2>

@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "login": "Ruslan",
+      "email": "",
+      "password": "",
+      "orders": [
+
+      ],
+      "favorite": [],
+      "cart": []
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "",
+      "status": "new"
+    }
+  ],
+  "list-of-categories": [
+    {
+      "id" : 1,
+      "name": "Молоко, сыр, яйцо",
+      "img" : "./assets/category/img/milk.png"
+    },
+    {
+      "id" : 2,
+      "name": "Хлеб",
+      "img" : "./assets/category/img/bread.png"
+    },
+    {
+      "id" : 3,
+      "name": "Хлеб",
+      "img" : "./assets/category/img/bread.png"
+    }
+  ]
+}

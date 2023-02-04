@@ -6,6 +6,7 @@ import Popular from "./Popular/Popular";
 import Offer from "./Offer/Offer";
 import Shop from "./Shop/Shop";
 import News from "./News/News";
+import Form from "../../Components/Form/Form";
 
 const Home = () => {
     return (
