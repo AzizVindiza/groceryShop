@@ -1,22 +1,94 @@
-/* Error: Missing argument $f-color.
- *   ,--> stockCart.scss
- * 9 |     @include text(400,16px,150%, #414141);
- *   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation
- *   '
- *   ,--> ..\..\..\..\scss\base\mixins.scss
- * 2 | @mixin text($f-family,$f-weight,$f-size,$f-height,$f-color){
- *   |        ==================================================== declaration
- *   '
- *   stockCart.scss 9:5  text()
- *   stockCart.scss 9:5  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Missing argument $f-color.\a   \250c \2500 \2500 > stockCart.scss\a 9 \2502      @include text(400,16px,150%, #414141);\d\a   \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation\a   \2575 \a   \250c \2500 \2500 > ..\\..\\..\\..\\scss\\base\\mixins.scss\a 2 \2502  @mixin text($f-family,$f-weight,$f-size,$f-height,$f-color){\d\a   \2502         \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a   \2575 \a   stockCart.scss 9:5  text()\a   stockCart.scss 9:5  root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+.stockCart__wrapp {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 8px 0;
 }
+.stockCart__txt {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #414141;
+  width: 206px;
+  margin: 0 0 8px 0;
+}
+.stockCart__starts {
+  display: flex;
+  column-gap: 5px;
+  margin: 0 0 8px 0;
+}
+.stockCart__box {
+  width: 272px;
+  padding: 0 9px 9px 9px;
+  background: white;
+  border-radius: 6px;
+  position: relative;
+}
+.stockCart__price-sec {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #E5E5E5;
+}
+.stockCart__price {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #414141;
+}
+.stockCart__cart {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #BFBFBF;
+}
+.stockCart__btn {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #70C05B;
+  padding: 10px 0;
+  width: 100%;
+  border: 2px solid #70C05B;
+  border-radius: 8px;
+  background: transparent;
+}
+.stockCart__btn:hover {
+  background: #FF6633;
+  color: #ffffff;
+  border: 2px solid #FF6633;
+}
+.stockCart__pic {
+  width: 252px;
+}
+.stockCart__heart {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+}
+.stockCart__num {
+  width: 40px;
+  height: 24px;
+  background: #FF6633;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  position: absolute;
+  top: 120px;
+  left: 8px;
+}
+.stockCart__move {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=stockCart.css.map */

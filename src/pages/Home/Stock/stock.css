@@ -1,22 +1,35 @@
-/* Error: Missing argument $f-color.
- *   ,--> stock.scss
- * 20|     @include text(400,16px,150%,#606060);
- *   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation
- *   '
- *   ,--> ..\..\..\scss\base\mixins.scss
- * 2 | @mixin text($f-family,$f-weight,$f-size,$f-height,$f-color){
- *   |        ==================================================== declaration
- *   '
- *   stock.scss 20:5  text()
- *   stock.scss 20:5  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Missing argument $f-color.\a   \250c \2500 \2500 > stock.scss\a 20\2502      @include text(400,16px,150%,#606060);\d\a   \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation\a   \2575 \a   \250c \2500 \2500 > ..\\..\\..\\scss\\base\\mixins.scss\a 2 \2502  @mixin text($f-family,$f-weight,$f-size,$f-height,$f-color){\d\a   \2502         \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a   \2575 \a   stock.scss 20:5  text()\a   stock.scss 20:5  root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+.stock {
+  background: rgb(249, 244, 226);
 }
+.stock .container {
+  padding: 0 0 120px 0;
+}
+.stock__wrapper {
+  display: flex;
+  column-gap: 40px;
+}
+.stock__row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 40px 0;
+}
+.stock__block {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #606060;
+}
+.stock__title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  color: #414141;
+}
+
+/*# sourceMappingURL=stock.css.map */

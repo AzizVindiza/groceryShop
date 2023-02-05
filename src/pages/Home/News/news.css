@@ -1,22 +1,37 @@
-/* Error: Missing argument $f-color.
- *   ,--> news.scss
- * 18|     @include text(700,36px,150%,#414141)
- *   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation
- *   '
- *   ,--> ..\..\..\scss\base\mixins.scss
- * 2 | @mixin text($f-family,$f-weight,$f-size,$f-height,$f-color){
- *   |        ==================================================== declaration
- *   '
- *   news.scss 18:5  text()
- *   news.scss 18:5  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Missing argument $f-color.\a   \250c \2500 \2500 > news.scss\a 18\2502      @include text(700,36px,150%,#414141)\d\a   \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation\a   \2575 \a   \250c \2500 \2500 > ..\\..\\..\\scss\\base\\mixins.scss\a 2 \2502  @mixin text($f-family,$f-weight,$f-size,$f-height,$f-color){\d\a   \2502         \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a   \2575 \a   news.scss 18:5  text()\a   news.scss 18:5  root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+.news {
+  background: rgb(249, 244, 226);
 }
+.news .container {
+  padding: 0 0 80px 0;
+}
+.news__row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 48px 0;
+}
+.news__block {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.news__title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  color: #414141;
+}
+.news__all {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #606060;
+}
+.news__wrapper {
+  display: flex;
+  column-gap: 40px;
+}
+
+/*# sourceMappingURL=news.css.map */

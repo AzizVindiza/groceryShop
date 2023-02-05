@@ -1,22 +1,46 @@
-/* Error: Missing argument $f-color.
- *   ,--> newsCart.scss
- * 5 |       @include text(400,12px,150%,#8F8F8F);
- *   |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation
- *   '
- *   ,--> ..\..\..\..\scss\base\mixins.scss
- * 2 | @mixin text($f-family,$f-weight,$f-size,$f-height,$f-color){
- *   |        ==================================================== declaration
- *   '
- *   newsCart.scss 5:7  text()
- *   newsCart.scss 5:7  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Missing argument $f-color.\a   \250c \2500 \2500 > newsCart.scss\a 5 \2502        @include text(400,12px,150%,#8F8F8F);\d\a   \2502        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation\a   \2575 \a   \250c \2500 \2500 > ..\\..\\..\\..\\scss\\base\\mixins.scss\a 2 \2502  @mixin text($f-family,$f-weight,$f-size,$f-height,$f-color){\d\a   \2502         \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a   \2575 \a   newsCart.scss 5:7  text()\a   newsCart.scss 5:7  root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+.newsCart__subtitle {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #8F8F8F;
+  width: 356px;
+  margin: 0 0 10px 10px;
 }
+.newsCart__text {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #8F8F8F;
+  width: 316px;
+  margin: 0 0 10px 10px;
+}
+.newsCart__txt {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #414141;
+  width: 356px;
+  margin: 0 0 10px 10px;
+}
+.newsCart__btn {
+  background: #E5FFDE;
+  padding: 8px 14px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #70C05B;
+  border-radius: 5px;
+  margin: 0 0 0 10px;
+}
+.newsCart__block {
+  background: rgb(255, 255, 255);
+  width: 376px;
+  padding: 0 0 10px 0;
+}
+
+/*# sourceMappingURL=newsCart.css.map */

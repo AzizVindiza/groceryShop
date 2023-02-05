@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  resize: none;
+  outline: none;
+  border: none;
+}
+
+.container {
+  max-width: 1208px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */

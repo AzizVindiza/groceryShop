@@ -6,7 +6,7 @@
     margin: 0 0 8px 0;
   }
   &__txt{
-    @include text(400,16px,150%, #414141);
+    @include text("Rubik",400,16px,150%, #414141);
     width: 206px;
     margin: 0 0 8px 0;
   }
@@ -21,21 +21,21 @@
     background: #ffffffff;
     border-radius: 6px;
     position: relative;
-    &::before{
-      contain: '';
-    }
+    //&::before{
+    //  contain: '';
+    //}
   }
   &__price-sec{
-    @include text(400,16px,150%, #E5E5E5);
+    @include text("Rubik",400,16px,150%, #E5E5E5);
   }
   &__price{
-    @include text(700,18px,150%,#414141)
+    @include text("Rubik",700,18px,150%,#414141)
   }
   &__cart{
-    @include text(400,12px,150%,#BFBFBF)
+    @include text("Rubik",400,12px,150%,#BFBFBF)
   }
   &__btn{
-    @include text(400,16px,150%, #70C05B);
+    @include text("Rubik",400,16px,150%, #70C05B);
     padding: 10px 0 ;
     width: 100%;
     border: 2px solid #70C05B;
@@ -68,6 +68,6 @@
     left:8px;
   }
   &__move{
-    @include text(400,16px,150%,#ffffff)
+    @include text("Rubik",400,16px,150%,#ffffff)
   }
 }
