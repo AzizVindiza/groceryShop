@@ -10,8 +10,6 @@ const Form = () => {
 
     const [display,setDisplay] = useState("flex")
 
-    const popup = useRef()
-
     const {
         register,
         reset,
@@ -29,7 +27,7 @@ const Form = () => {
             cart: []
         }).then((rec)=>{
             localStorage.setItem("user",JSON.stringify({
-                token:rec.data.accessToken,
+                token: rec.data.accessToken,
                 ...rec.data
             }))
             reset()
@@ -55,13 +53,16 @@ const Form = () => {
             console.log(errors)
         })
     }
+    const onSubmit1 = (data) =>{
+        local === 'register' ? registerUser(data) : loginUser(data)
+    };
 
 
 
     return (
         <div className="popup" style={{display:display}}>
             <div className="popup__form">
-                <form noValidate className="form" onSubmit={handleSubmit()}>
+                <form noValidate className="form" onSubmit={handleSubmit(onSubmit1)}>
                     <h2 className='form__title'>
                         { local === 'register'? "Зарегистрироваться":'Войти'}
                     </h2>
@@ -79,7 +80,7 @@ const Form = () => {
                                 message:'Минимальная длинна 3 символа',
                                 value:3
                             }
-                        })} className='form__field' type="text" placeholder='Введите Email'/>
+                        })} className='form__field' type="text" placeholder='Введите логин'/>
                         <span className='form__error'>{errors.login && errors.login.message}</span>
                     </label> : ""}
                     <label className='form__label'>
@@ -89,14 +90,14 @@ const Form = () => {
                                 value: true
                             },
                             maxLength:{
-                                message:'Максимальная длинна 10 символов',
+                                message:'Максимальная длинна 20 символов',
                                 value:20
                             },
                             minLength:{
-                                message:'Минимальная длинна 3 символа',
+                                message:'Минимальная длинна 5 символа',
                                 value:5
                             }
-                        })}  className='form__field' type="email" placeholder='Введите логин'/>
+                        })}  className='form__field' type="email" placeholder='Введите Email'/>
                         <span className='form__error'>{errors.email && errors.email.message}</span>
                     </label>
                     <label className='form__label'>

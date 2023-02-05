@@ -17,7 +17,7 @@ const StockCart = () => {
                 discount.filter((item) => item.discount === true).map((el) => (
                     <div key={el.id} className="stockCart__box">
                         <div className="stockCart__num">
-                            <h5 className="stockCart__move">{el.discountPercent}</h5>
+                            <h5 className="stockCart__move">{`${el.discountPercent}%`}</h5>
                         </div>
                         <div className="stockCart__heart">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill=" none" xmlns="http://www.w3.org/2000/svg">
