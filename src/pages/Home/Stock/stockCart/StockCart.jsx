@@ -15,7 +15,7 @@ const StockCart = () => {
         <div className="stockCart">
             {
                 discount.filter((item) => item.discount === true).map((el) => (
-                    <div className="stockCart__box">
+                    <div key={el.id} className="stockCart__box">
                         <div className="stockCart__num">
                             <h5 className="stockCart__move">{`${el.discountPercent}%`}</h5>
                         </div>

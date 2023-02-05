@@ -186,5 +186,27 @@
       "name": "Непродовольственные товары",
       "img": "./assets/category/img/nonFoodProducts.png"
     }
+  ],
+  "maps" : [
+    {
+      "id": 1,
+      "title": "п.Щельяюр",
+      "location": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11697.492366436472!2d74.5684204!3d42.8649688!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec9a0360ea95b%3A0x1484f7504c9ac9b4!2sNOVOTEL%20Bishkek%20City%20Center!5e0!3m2!1sru!2skg!4v1675584769716!5m2!1sru!2skg"
+    },
+    {
+      "id": 2,
+      "title": "д.Вертеп",
+      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11704.367184295514!2d74.60916593760383!3d42.828674716529484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb674a1ab9f8b%3A0xbaf00e4cf88cf7c4!2zNy3QuSDQvNC40LrRgNC-0YDQsNC50L7QvSwg0JHQuNGI0LrQtdC6!5e0!3m2!1sru!2skg!4v1675584979276!5m2!1sru!2skg"
+    },
+    {
+      "id": 3,
+      "title": "с.Краснобор",
+      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11706.417291868614!2d74.61169794291389!3d42.81784682484107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb77f7f404c71%3A0x9650c7f2dd6b79d!2zS0ZDINCQ0LLRgtC-IC0g0JzQsNCz0LjRgdGC0YDQsNC70Yw!5e0!3m2!1sru!2skg!4v1675585007546!5m2!1sru!2skg"
+    },
+    {
+      "id": 4,
+      "title": "д.Диюр",
+      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11703.383826916224!2d74.63830545634158!3d42.83386765440216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb70107cbc9d9%3A0xf441663a899640b9!2sZAMAN%20EVENT%20HALL!5e0!3m2!1sru!2skg!4v1675585051425!5m2!1sru!2skg"
+    }
   ]
 }
