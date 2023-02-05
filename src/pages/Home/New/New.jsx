@@ -18,9 +18,6 @@ const New = () => {
                 </div>
                 <div className="new__wrapper">
                   <CartNew/>
-                  <CartNew/>
-                  <CartNew/>
-                  <CartNew/>
                 </div>
             </div>
         </section>

@@ -3,12 +3,14 @@ import "./Category.scss"
 import Card from "./Card/Card";
 import {Link} from "react-router-dom";
 import axios from "axios";
+import data from "../../utils/data";
 
 const Category = () => {
     const [arrCategory,setArrCategory] = useState([])
     useEffect(()=>{
         axios("http://localhost:8080/list-of-categories")
             .then(({data})=> setArrCategory(data))
+
     },[])
     return (
         <>
