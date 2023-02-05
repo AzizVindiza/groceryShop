@@ -19,9 +19,6 @@ const Stock = () => {
                 </div>
                 <div className="stock__wrapper">
                    <StockCart/>
-                   <StockCart/>
-                   <StockCart/>
-                   <StockCart/>
                 </div>
             </div>
         </section>

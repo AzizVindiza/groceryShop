@@ -1,5 +1,7 @@
 @import "../../../../scss/base/mixins";
 .stockCart{
+  display: flex;
+  column-gap: 40px;
   &__wrapp{
     display: flex;
     justify-content: space-between;
@@ -7,7 +9,7 @@
   }
   &__txt{
     @include text("Rubik",400,16px,150%, #414141);
-    width: 206px;
+    width: 256px;
     margin: 0 0 8px 0;
   }
   &__starts{
