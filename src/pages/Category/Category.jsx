@@ -3,7 +3,6 @@ import "./Category.scss"
 import Card from "./Card/Card";
 import {Link} from "react-router-dom";
 import axios from "axios";
-import data from "../../utils/data";
 
 const Category = () => {
     const [arrCategory,setArrCategory] = useState([])
