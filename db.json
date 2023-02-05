@@ -5,18 +5,34 @@
       "login": "Ruslan",
       "email": "",
       "password": "",
-      "orders": [
-
-      ],
+      "orders": [],
       "favorite": [],
       "cart": []
+    },
+    {
+      "email": "ruslan@mail.ru",
+      "password": "$2a$10$JGH5al0nba9jXRxNxOsFAuDSrKLKicYDowOF2HZIp0aOQeyMVAZd2",
+      "login": "ruslan",
+      "orders": [],
+      "favorite": [],
+      "cart": [],
+      "id": 2
+    },
+    {
+      "email": "ruslan1@mail.ru",
+      "password": "$2a$10$4mlCWBl.mvt5g.bKHc9LFexpRKReBvWlUCS0bTd2Mqln0mOSl.A2i",
+      "login": "ruslan1",
+      "orders": [],
+      "favorite": [],
+      "cart": [],
+      "id": 3
     }
   ],
   "products": [
     {
       "id": 1,
-      "img" : "./assets/products/img/bliny.png",
-      "price":"44.50",
+      "img": "./assets/products/img/bliny.png",
+      "price": "44.50",
       "name": "Г/Ц Блинчики с мясом вес, Россия",
       "status": "new",
       "discount": true,
@@ -24,23 +40,17 @@
     },
     {
       "id": 2,
-<<<<<<< HEAD
-      "img" : "./assets/products/img/milk-rogachev.png",
-      "price":"55.50",
-      "name": "Молоко ПРОСТОКВАШИНО паст. питьевое цельное...",
-=======
-      "img" : "./assets/products/img/milk.png",
-      "price":"55,50",
+      "img": "./assets/products/img/milk.png",
+      "price": "55,50",
       "name": "Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...",
->>>>>>> ef6f093f0bac3ecc553e459aee3fcc7f759476b3
       "status": "new",
       "discount": true,
       "discountPercent": 50
     },
     {
       "id": 3,
-      "img" : "./assets/products/img/suasage-chees.png",
-      "price":"58.50",
+      "img": "./assets/products/img/suasage-chees.png",
+      "price": "58.50",
       "name": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчи...",
       "status": "new",
       "discount": true,
@@ -48,44 +58,26 @@
     },
     {
       "id": 4,
-      "img" : "./assets/products/img/jam-sausage.png",
-<<<<<<< HEAD
-      "price":"44.50",
-      "name": "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и с...",
-=======
-      "price":"44,50",
+      "img": "./assets/products/img/jam-sausage.png",
+      "price": "44,50",
       "name": "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
->>>>>>> ef6f093f0bac3ecc553e459aee3fcc7f759476b3
       "status": "new",
       "discount": true,
       "discountPercent": 50
     },
     {
       "id": 5,
-<<<<<<< HEAD
-      "img" : "./assets/products/img/kombayn.png",
-      "price":"74.50",
-      "name": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
-      "status": "new",
-=======
-      "img" : "./assets/products/img/saus-beef.jpg",
-      "price":"104,50",
+      "img": "./assets/products/img/saus-beef.jpg",
+      "price": "104,50",
       "name": "Сосиськи «ДЕСНА-ПОЛЕСЬЕ GS12»",
       "status": "sale",
->>>>>>> ef6f093f0bac3ecc553e459aee3fcc7f759476b3
       "discount": false,
       "discountPercent": 0
     },
     {
       "id": 6,
-<<<<<<< HEAD
-      "img" : "./assets/products/img/bliny.png",
-      "price":"44.50",
-      "name": "Г/Ц Блинчики с мясом вес, Россия",
-      "status": "new",
-=======
-      "img" : "./assets/products/img/beef.jpg",
-      "price":"184,50",
+      "img": "./assets/products/img/beef.jpg",
+      "price": "184,50",
       "name": "Колбаса «ДЕСНА GF22» 'Говяжья', Россия",
       "status": "sale",
       "discount": false,
@@ -93,18 +85,17 @@
     },
     {
       "id": 5,
-      "img" : "./assets/products/img/sale-milk.jfif",
-      "price":"28,20",
+      "img": "./assets/products/img/sale-milk.jfif",
+      "price": "28,20",
       "name": "Сгущенное молоко «ПОЛЕСЬЕ GS12»",
       "status": "sale",
->>>>>>> ef6f093f0bac3ecc553e459aee3fcc7f759476b3
       "discount": false,
       "discountPercent": 0
     },
     {
       "id": 7,
-      "img" : "./assets/products/img/kzs.png",
-      "price":"139.99",
+      "img": "./assets/products/img/kzs.png",
+      "price": "139.99",
       "name": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
       "status": "sale",
       "discount": false,
@@ -112,89 +103,88 @@
     },
     {
       "id": 8,
-      "img" : "./assets/products/img/milk-rogachev.png",
-      "price":"77.99",
+      "img": "./assets/products/img/milk-rogachev.png",
+      "price": "77.99",
       "name": "Молоко сгущенное РОГАЧЕВ Егорка, цельное с сахаром...",
       "status": "new",
-      "discount":false,
+      "discount": false,
       "discountPercent": 0
     },
     {
       "id": 9,
-      "img" : "./assets/products/img/butter.png",
-      "price":"192.99",
+      "img": "./assets/products/img/butter.png",
+      "price": "192.99",
       "name": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
       "status": "new",
       "discount": false,
       "discountPercent": 0
     }
-
   ],
   "list-of-categories": [
     {
-      "id" : 1,
+      "id": 1,
       "name": "Молоко, сыр, яйцо",
-      "img" : "./assets/category/img/milk.png"
+      "img": "./assets/category/img/milk.png"
     },
     {
-      "id" : 2,
+      "id": 2,
       "name": "Хлеб",
-      "img" : "./assets/category/img/bread.png"
+      "img": "./assets/category/img/bread.png"
     },
     {
-      "id" : 3,
+      "id": 3,
       "name": "Фрукты и овощи",
-      "img" : "./assets/category/img/fruits.png"
+      "img": "./assets/category/img/fruits.png"
     },
     {
-      "id" : 4,
+      "id": 4,
       "name": "Замороженные продукты",
-      "img" : "./assets/category/img/FrozenFood.png"
+      "img": "./assets/category/img/FrozenFood.png"
     },
     {
-      "id" : 5,
+      "id": 5,
       "name": "Напитки",
-      "img" : "./assets/category/img/drinks.png"
+      "img": "./assets/category/img/drinks.png"
     },
     {
-      "id" : 6,
+      "id": 6,
       "name": "Кондитерские изделия",
-      "img" : "./assets/category/img/confectionery.png"
+      "img": "./assets/category/img/confectionery.png"
     },
     {
-      "id" : 7,
+      "id": 7,
       "name": "Чай, кофе",
-      "img" : "./assets/category/img/tea.png"
+      "img": "./assets/category/img/tea.png"
     },
     {
-      "id" : 8,
+      "id": 8,
       "name": "Бакалея",
-      "img" : "./assets/category/img/grocery.png"
+      "img": "./assets/category/img/grocery.png"
     },
     {
-      "id" : 9,
+      "id": 9,
       "name": "Здоровое питание",
-      "img" : "./assets/category/img/healthy.png"
+      "img": "./assets/category/img/healthy.png"
     },
     {
-      "id" : 10,
+      "id": 10,
       "name": "Зоотовары",
-      "img" : "./assets/category/img/petSupplies.png"
+      "img": "./assets/category/img/petSupplies.png"
     },
     {
-      "id" : 11,
+      "id": 11,
       "name": "Детское питание",
-      "img" : "./assets/category/img/kids.png"
+      "img": "./assets/category/img/kids.png"
     },
     {
-      "id" : 12,
+      "id": 12,
       "name": "Мясо, птица, колбаса",
-      "img" : "./assets/category/img/meat.png"
+      "img": "./assets/category/img/meat.png"
     },
     {
-      "id" : 13,
+      "id": 13,
       "name": "Непродовольственные товары",
-      "img" : "./assets/category/img/nonFoodProducts.png"
+      "img": "./assets/category/img/nonFoodProducts.png"
     }
   ]
 }
