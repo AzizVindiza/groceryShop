@@ -1,8 +1,16 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import "./Catalog.scss"
+import axios from "axios";
 
 const Catalog = () => {
     const [activeHum, setActiveHum] = useState(false)
+
+    const [category,setCategory] = useState( [])
+    useEffect(()=>{
+        axios("http://localhost:8080/list-of-categories")
+            .then(({data})=>setCategory(data))
+            .catch((err)=>console.log(err))
+    },[])
     return (
         <div className="catalog">
             <h2 className="catalog__title">
@@ -22,12 +30,15 @@ const Catalog = () => {
                 </svg>
                 <span className="catalog__txt">Каталог</span>
             </h2>
-            <ul className="catalog__content" style={ {display: activeHum ?`block`:"none"}}>
-                <li className="catalog__li">lorem</li>
-                <li className="catalog__li">lorem</li>
-                <li className="catalog__li">lorem</li>
-                <li className="catalog__li">lorem</li>
-            </ul>
+            <div className="catalog__content" style={{display: activeHum ?`block`:"none"}}>
+               <ul className="catalog__ul">
+                   {
+                       category.map(item=>(
+                           <li key={item.id} className="catalog__li">{item.name}</li>
+                       ))
+                   }
+               </ul>
+            </div>
         </div>
     );
 };

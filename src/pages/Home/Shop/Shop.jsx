@@ -1,19 +1,20 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import "./shop.scss"
+import axios from "axios";
 const Shop = () => {
-    const [btn,setBtn] = useState(0)
-    // const changeBtn = () => {
-    //     setBtn()
-    // }
-    const arr = ['п.Щельяюр','д.Вертеп','с.Краснобор','д.Диюр']
+    const  [btn,setBtn] = useState([])
+    useEffect(() => {
+        axios("http://localhost:8080/maps")
+            .then(({data}) => setBtn(data))
+    },[])
     return (
         <section className='shop'>
             <div className="container">
                 <h2 className="shop__title">Наши магазины</h2>
                 <div className="shop__city">
                     {
-                        arr.map((item,i) => (
-                            <button onClick={() => setBtn(i)} className={`shop__btn ${btn === i ? 'shop__active': ''}`}>{item}</button>
+                        btn.map((item) => (
+                            <button key={item.id} className={`shop__btn ${btn === btn.id ? 'shop__active' : ''}`}>{item.title}</button>
                         ))
                     }
 

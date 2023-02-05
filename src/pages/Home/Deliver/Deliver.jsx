@@ -2,6 +2,7 @@ import React from 'react';
 import "./deliver.scss"
 import product from './img/podarochnaya-korzina-s-produktami-700x700.jpg'
 const Deliver = () => {
+
     return (
         <section className='deliver'>
             <div className="container">

@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+.addCart {
+  display: flex;
+  column-gap: 40px;
+}
 .addCart__txt {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   color: #414141;
-  width: 206px;
+  width: 256px;
   margin: 0 0 8px 0;
 }
 .addCart__starts {
@@ -44,9 +48,14 @@
   color: #ffffff;
   border: 2px solid #FF6633;
 }
+.addCart__image {
+  width: 252px;
+  height: 170px;
+  margin: 0 0 8px 0;
+}
 .addCart__pic {
   width: 100%;
-  margin: 0 0 8px 0;
+  height: 100%;
 }
 .addCart__heart {
   position: absolute;
@@ -71,6 +80,9 @@
   font-size: 16px;
   line-height: 150%;
   color: #ffffff;
+}
+.addCart__price {
+  margin: 0 0 26px 0;
 }
 
 /*# sourceMappingURL=cartNew.css.map */
