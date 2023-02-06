@@ -1,5 +1,5 @@
 import React from 'react';
-<<<<<<< HEAD
+
 import "./about.scss"
 import AboutPoint from "./ComponentsAbout/AboutPoint/AboutPoint";
 import Svg1 from "./ComponentsAbout/AboutImage/Svg1";
@@ -26,14 +26,6 @@ const About = () => {
                 </div>
             </div>
         </section>
-=======
-import Form from "../../Components/Form/Form";
-
-const About = () => {
-    return (
-        <div>
-        </div>
->>>>>>> 31f78d43fd381b87f5c2843964d4b2b54b68dff4
     );
 };
 
