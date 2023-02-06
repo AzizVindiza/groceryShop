@@ -2,9 +2,9 @@ import React from 'react';
 
 import './productCart.scss'
 
-import sausage from '../ProductImage/sausage.png'
-import favorite from '../ProductImage/favoriteHeart.png'
-import rating from '../ProductImage/rating.png'
+import sausage from '../../ComponentsProduct/ProductImage/sausage.png'
+import favorite from '../../ComponentsProduct/ProductImage/favoriteHeart.png'
+import rating from '../../ComponentsProduct/ProductImage/rating.png'
 
 const ProductCart = () => {
     return (

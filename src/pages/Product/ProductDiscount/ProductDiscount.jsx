@@ -1,8 +1,7 @@
 import React from 'react';
 import "./productDiscount.scss"
 import Title from "../ComponentsProduct/Title/Title";
-import ProductCart from "../ComponentsProduct/ProductCart/ProductCart";
-import ProductSale from "../ComponentsProduct/ProductSale/ProductSale";
+import ProductSale from "./ProductSale/ProductSale";
 
 const ProductDiscount = () => {
     return (
@@ -18,9 +17,7 @@ const ProductDiscount = () => {
                     <div className="discount__wrapper">
 
                         <ProductSale/>
-                        <ProductSale/>
-                        <ProductSale/>
-                        <ProductSale/>
+
                     </div>
 
 

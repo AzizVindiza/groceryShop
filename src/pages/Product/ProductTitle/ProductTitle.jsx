@@ -1,11 +1,11 @@
 import React from 'react';
 import "./productTitle.scss";
 import "../ComponentsProduct/Title/Title"
-import Title from "../ComponentsProduct/Title/Title";
+
 import small_cat from "../ComponentsProduct/ProductImage/small_cat.png"
 import cat from "../ComponentsProduct/ProductImage/cat.png"
 import cow from "../ComponentsProduct/ProductImage/cow1.png"
-import StarRating from "../../../Components/StarRating";
+
 
 
 
