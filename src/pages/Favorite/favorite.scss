@@ -25,25 +25,23 @@
           display: flex;
           color: #414141;
           align-items: center;
-
         }
     &__breadcrumb-item:after
     {
       content: url(img/breadcrumb.svg);
-
       display: inline;
       margin-left: 16px;
-
-
     }
     &__breadcrumb-item:last-child {
       color: #8F8F8F;
     }
     &__breadcrumb-item:last-child:after
     {
-      
       content: '';
     }    
+    &__breadcrumb-link {
+      color: #414141;
+    }
     &__content {
       display: flex;
       column-gap: 50px;
@@ -205,6 +203,7 @@ margin-bottom: 8px;
   border: 1px solid #70C05B;
   border-radius: 4px;
   width: 100%;
+  background-color: transparent;
   &:hover{
     color: #fff;
     background-color: #FF6633;

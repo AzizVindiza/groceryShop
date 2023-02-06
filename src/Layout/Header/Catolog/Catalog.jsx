@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import "./Catalog.scss"
 import axios from "axios";
+import {Link} from "react-router-dom";
+
 
 const Catalog = () => {
     const [activeHum, setActiveHum] = useState(false)
@@ -34,7 +36,7 @@ const Catalog = () => {
                <ul className="catalog__ul">
                    {
                        category.map(item=>(
-                           <li key={item.id} className="catalog__li">{item.name}</li>
+                           <Link to={""} key={item.id} className="catalog__li">{item.name}</Link>
                        ))
                    }
                </ul>
