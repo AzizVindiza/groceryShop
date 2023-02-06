@@ -5,35 +5,208 @@
       "login": "Ruslan",
       "email": "",
       "password": "",
-      "orders": [
-
-      ],
+      "orders": [],
       "favorite": [],
       "cart": []
+    },
+    {
+      "email": "ruslan@mail.ru",
+      "password": "$2a$10$JGH5al0nba9jXRxNxOsFAuDSrKLKicYDowOF2HZIp0aOQeyMVAZd2",
+      "login": "ruslan",
+      "orders": [],
+      "favorite": [],
+      "cart": [],
+      "id": 2
+    },
+    {
+      "email": "ruslan1@mail.ru",
+      "password": "$2a$10$4mlCWBl.mvt5g.bKHc9LFexpRKReBvWlUCS0bTd2Mqln0mOSl.A2i",
+      "login": "ruslan1",
+      "orders": [],
+      "favorite": [],
+      "cart": [],
+      "id": 3
     }
   ],
   "products": [
     {
       "id": 1,
-      "name": "",
-      "status": "new"
+      "img": "./assets/products/img/bliny.png",
+      "price": "44.50",
+      "name": "Г/Ц Блинчики с мясом вес, Россия",
+      "status": "new",
+      "discount": true,
+      "discountPercent": 50
+    },
+    {
+      "id": 2,
+      "img": "./assets/products/img/milk.png",
+      "price": "55,50",
+      "name": "Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...",
+      "status": "new",
+      "discount": true,
+      "discountPercent": 50
+    },
+    {
+      "id": 3,
+      "img": "./assets/products/img/suasage-chees.png",
+      "price": "58.50",
+      "name": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчи...",
+      "status": "new",
+      "discount": true,
+      "discountPercent": 50
+    },
+    {
+      "id": 4,
+      "img": "./assets/products/img/jam-sausage.png",
+      "price": "44,50",
+      "name": "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
+      "status": "new",
+      "discount": true,
+      "discountPercent": 50
+    },
+    {
+      "id": 5,
+      "img": "./assets/products/img/saus-beef.jpg",
+      "price": "104,50",
+      "name": "Сосиськи «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "status": "sale",
+      "discount": false,
+      "discountPercent": 0
+    },
+    {
+      "id": 6,
+      "img": "./assets/products/img/beef.jpg",
+      "price": "184,50",
+      "name": "Колбаса «ДЕСНА GF22» 'Говяжья', Россия",
+      "status": "sale",
+      "discount": false,
+      "discountPercent": 0
+    },
+    {
+      "id": 5,
+      "img": "./assets/products/img/sale-milk.jfif",
+      "price": "28,20",
+      "name": "Сгущенное молоко «ПОЛЕСЬЕ GS12»",
+      "status": "sale",
+      "discount": false,
+      "discountPercent": 0
+    },
+    {
+      "id": 7,
+      "img": "./assets/products/img/kzs.png",
+      "price": "139.99",
+      "name": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "status": "sale",
+      "discount": false,
+      "discountPercent": 0
+    },
+    {
+      "id": 8,
+      "img": "./assets/products/img/milk-rogachev.png",
+      "price": "77.99",
+      "name": "Молоко сгущенное РОГАЧЕВ Егорка, цельное с сахаром...",
+      "status": "new",
+      "discount": false,
+      "discountPercent": 0
+    },
+    {
+      "id": 9,
+      "img": "./assets/products/img/butter.png",
+      "price": "192.99",
+      "name": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "status": "new",
+      "discount": false,
+      "discountPercent": 0
     }
   ],
   "list-of-categories": [
     {
-      "id" : 1,
+      "id": 1,
       "name": "Молоко, сыр, яйцо",
-      "img" : "./assets/category/img/milk.png"
+      "img": "./assets/category/img/milk.png"
     },
     {
-      "id" : 2,
+      "id": 2,
       "name": "Хлеб",
-      "img" : "./assets/category/img/bread.png"
+      "img": "./assets/category/img/bread.png"
     },
     {
-      "id" : 3,
-      "name": "Хлеб",
-      "img" : "./assets/category/img/bread.png"
+      "id": 3,
+      "name": "Фрукты и овощи",
+      "img": "./assets/category/img/fruits.png"
+    },
+    {
+      "id": 4,
+      "name": "Замороженные продукты",
+      "img": "./assets/category/img/FrozenFood.png"
+    },
+    {
+      "id": 5,
+      "name": "Напитки",
+      "img": "./assets/category/img/drinks.png"
+    },
+    {
+      "id": 6,
+      "name": "Кондитерские изделия",
+      "img": "./assets/category/img/confectionery.png"
+    },
+    {
+      "id": 7,
+      "name": "Чай, кофе",
+      "img": "./assets/category/img/tea.png"
+    },
+    {
+      "id": 8,
+      "name": "Бакалея",
+      "img": "./assets/category/img/grocery.png"
+    },
+    {
+      "id": 9,
+      "name": "Здоровое питание",
+      "img": "./assets/category/img/healthy.png"
+    },
+    {
+      "id": 10,
+      "name": "Зоотовары",
+      "img": "./assets/category/img/petSupplies.png"
+    },
+    {
+      "id": 11,
+      "name": "Детское питание",
+      "img": "./assets/category/img/kids.png"
+    },
+    {
+      "id": 12,
+      "name": "Мясо, птица, колбаса",
+      "img": "./assets/category/img/meat.png"
+    },
+    {
+      "id": 13,
+      "name": "Непродовольственные товары",
+      "img": "./assets/category/img/nonFoodProducts.png"
+    }
+  ],
+  "maps" : [
+    {
+      "id": 1,
+      "title": "п.Щельяюр",
+      "location": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11697.492366436472!2d74.5684204!3d42.8649688!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec9a0360ea95b%3A0x1484f7504c9ac9b4!2sNOVOTEL%20Bishkek%20City%20Center!5e0!3m2!1sru!2skg!4v1675584769716!5m2!1sru!2skg"
+    },
+    {
+      "id": 2,
+      "title": "д.Вертеп",
+      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11704.367184295514!2d74.60916593760383!3d42.828674716529484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb674a1ab9f8b%3A0xbaf00e4cf88cf7c4!2zNy3QuSDQvNC40LrRgNC-0YDQsNC50L7QvSwg0JHQuNGI0LrQtdC6!5e0!3m2!1sru!2skg!4v1675584979276!5m2!1sru!2skg"
+    },
+    {
+      "id": 3,
+      "title": "с.Краснобор",
+      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11706.417291868614!2d74.61169794291389!3d42.81784682484107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb77f7f404c71%3A0x9650c7f2dd6b79d!2zS0ZDINCQ0LLRgtC-IC0g0JzQsNCz0LjRgdGC0YDQsNC70Yw!5e0!3m2!1sru!2skg!4v1675585007546!5m2!1sru!2skg"
+    },
+    {
+      "id": 4,
+      "title": "д.Диюр",
+      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11703.383826916224!2d74.63830545634158!3d42.83386765440216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb70107cbc9d9%3A0xf441663a899640b9!2sZAMAN%20EVENT%20HALL!5e0!3m2!1sru!2skg!4v1675585051425!5m2!1sru!2skg"
     }
   ]
 }

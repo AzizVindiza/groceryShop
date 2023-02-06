@@ -9,6 +9,7 @@ const Category = () => {
     useEffect(()=>{
         axios("http://localhost:8080/list-of-categories")
             .then(({data})=> setArrCategory(data))
+
     },[])
     return (
         <>

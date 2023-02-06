@@ -7,12 +7,12 @@ import ProductDiscount from "./ProductDiscount/ProductDiscount";
 
 const Product = () => {
     return (
-        <div className="container">
+        <>
             <ProductTitle/>
             <ProductSame/>
             <ProductReviews/>
             <ProductDiscount/>
-        </div>
+        </>
     );
 };
 
