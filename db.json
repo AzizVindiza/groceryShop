@@ -41,7 +41,7 @@
     {
       "id": 2,
       "img": "./assets/products/img/milk.png",
-      "price": "55,50",
+      "price": "55.50",
       "name": "Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...",
       "status": "new",
       "discount": true,
@@ -59,7 +59,7 @@
     {
       "id": 4,
       "img": "./assets/products/img/jam-sausage.png",
-      "price": "44,50",
+      "price": "44.50",
       "name": "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
       "status": "new",
       "discount": true,
@@ -68,7 +68,7 @@
     {
       "id": 5,
       "img": "./assets/products/img/saus-beef.jpg",
-      "price": "104,50",
+      "price": "104.50",
       "name": "Сосиськи «ДЕСНА-ПОЛЕСЬЕ GS12»",
       "status": "sale",
       "discount": false,
@@ -77,7 +77,7 @@
     {
       "id": 6,
       "img": "./assets/products/img/beef.jpg",
-      "price": "184,50",
+      "price": "184.50",
       "name": "Колбаса «ДЕСНА GF22» 'Говяжья', Россия",
       "status": "sale",
       "discount": false,
@@ -86,7 +86,7 @@
     {
       "id": 5,
       "img": "./assets/products/img/sale-milk.jfif",
-      "price": "28,20",
+      "price": "28.20",
       "name": "Сгущенное молоко «ПОЛЕСЬЕ GS12»",
       "status": "sale",
       "discount": false,
