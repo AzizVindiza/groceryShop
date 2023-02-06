@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+.news {
+  background: rgb(249, 244, 226);
+}
+.news .container {
+  padding: 0 0 80px 0;
+}
+.news__row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 48px 0;
+}
+.news__block {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.news__title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  color: #414141;
+}
+.news__all {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #606060;
+}
+.news__wrapper {
+  display: flex;
+  column-gap: 40px;
+}
+
+/*# sourceMappingURL=news.css.map */

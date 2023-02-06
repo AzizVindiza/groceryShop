@@ -3,6 +3,36 @@
   <component name="ChangeListManager">
     <list default="true" id="3f7a356d-b451-4233-8815-88745c42ac03" name="Changes" comment="">
 <<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Deliver/Deliver.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Deliver/deliver.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Deliver/img/Group 7100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Deliver/img/podarochnaya-korzina-s-produktami-700x700.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/New/CartNew/CartNew.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/New/CartNew/cartNew.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/New/New.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/New/new.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/News/News.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/News/NewsCart/NewsCart.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/News/NewsCart/image 5 (2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/News/NewsCart/newsCart.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/News/news.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Offer/Offer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Offer/img/basket.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Offer/img/smile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Offer/offer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Popular/Popular.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Popular/popular.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Shop/Shop.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Shop/shop.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Stock/Stock.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Stock/img/image (3).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Stock/stock.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Stock/stockCart/StockCart.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Stock/stockCart/stockCart.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Home.jsx" afterDir="false" />
+=======
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/pages/Product/ComponentsProduct/ProductCart/ProductCart.jsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/pages/Product/ComponentsProduct/ProductCart/productCart.css" afterDir="false" />
@@ -48,6 +78,7 @@
       <change beforePath="$PROJECT_DIR$/src/pages/Product/Product.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Product/Product.jsx" afterDir="false" />
 >>>>>>> 30a8a673b1be5f41635727d14e756f11130276b4
 >>>>>>> da67738fff01283cff7afc74063510c6d8e7eb1c
+>>>>>>> 5a80dd659e64d6b16d1f58ac6a552f62c16141fd
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +110,10 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+<<<<<<< HEAD
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Notnik_kg/Desktop/project/groceryShop/src/pages/Home/News/NewsCart&quot;,
+=======
+>>>>>>> 5a80dd659e64d6b16d1f58ac6a552f62c16141fd
     &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
@@ -90,6 +125,13 @@
   }
 }</component>
   <component name="RecentsManager">
+<<<<<<< HEAD
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Notnik_kg\Desktop\project\groceryShop\src\pages\Home\News\NewsCart" />
+      <recent name="C:\Users\Notnik_kg\Desktop\project\groceryShop\src\pages\Home\Offer\img" />
+      <recent name="C:\Users\Notnik_kg\Desktop\project\groceryShop\src\pages\Home\Stock\img" />
+      <recent name="C:\Users\Notnik_kg\Desktop\project\groceryShop\src\pages\Home\Deliver\img" />
+=======
     <key name="MoveFile.RECENT_KEYS">
 <<<<<<< HEAD
       <recent name="C:\Users\User\Desktop\project\groceryShop\src\pages\Search\img" />
@@ -97,6 +139,7 @@
       <recent name="C:\Users\Legion\Desktop\project\groceryShop\src\pages\Product\ComponentsProduct\ProductImage" />
 >>>>>>> 30a8a673b1be5f41635727d14e756f11130276b4
       <recent name="C:\Users\User\Desktop\project\groceryShop\src\Components\Form" />
+>>>>>>> 5a80dd659e64d6b16d1f58ac6a552f62c16141fd
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -112,6 +155,14 @@
       <updated>1675177744716</updated>
       <workItem from="1675177746006" duration="89000" />
       <workItem from="1675177995245" duration="92000" />
+<<<<<<< HEAD
+      <workItem from="1675178836365" duration="1009000" />
+      <workItem from="1675239487145" duration="7557000" />
+      <workItem from="1675331759329" duration="8039000" />
+      <workItem from="1675436566119" duration="5668000" />
+      <workItem from="1675502338533" duration="2892000" />
+      <workItem from="1675515773041" duration="175000" />
+=======
       <workItem from="1675243909820" duration="153000" />
 <<<<<<< HEAD
       <workItem from="1675257621472" duration="9267000" />
@@ -126,6 +177,7 @@
       <workItem from="1675351364075" duration="13829000" />
 >>>>>>> 30a8a673b1be5f41635727d14e756f11130276b4
 >>>>>>> da67738fff01283cff7afc74063510c6d8e7eb1c
+>>>>>>> 5a80dd659e64d6b16d1f58ac6a552f62c16141fd
     </task>
     <servers />
   </component>
@@ -147,8 +199,13 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
+<<<<<<< HEAD
+          <url>file://$PROJECT_DIR$/src/pages/Home/Shop/Shop.jsx</url>
+          <line>3</line>
+=======
           <url>file://$PROJECT_DIR$/src/pages/Product/ProductReviews/ProductReviews.jsx</url>
           <line>29</line>
+>>>>>>> 5a80dd659e64d6b16d1f58ac6a552f62c16141fd
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

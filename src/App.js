@@ -1,6 +1,7 @@
 import React from "react";
 import {Route, Routes} from "react-router-dom";
-
+import { ChakraProvider,  } from '@chakra-ui/react'
+import {data} from "./utils/data";
 import Layout from "./Layout/Layout";
 import Home from "./pages/Home/Home";
 import Category from "./pages/Category/Category";
@@ -15,7 +16,10 @@ import Search from "./pages/Search/Search";
 
 import "./scss/style.scss"
 const App = () => {
+ 
+
     return (
+        <ChakraProvider>
        <Routes>
            <Route path={"/"} element={<Layout/>}>
                <Route path={""} element={<Home/>}/>
@@ -38,6 +42,7 @@ const App = () => {
                {/*Руслан*/}
            </Route>
        </Routes>
+       </ChakraProvider>
     );
 };
 

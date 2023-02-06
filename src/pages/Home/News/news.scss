@@ -1,0 +1,27 @@
+@import "../../../scss/base/mixins";
+.news{
+  background: rgba(249, 244, 226, 1);
+  .container{
+     padding: 0 0 80px 0;
+  }
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    margin:0 0 48px 0;
+  }
+  &__block{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+  &__title{
+    @include text("Rubik",700,36px,150%,#414141)
+  }
+  &__all{
+    @include text("Rubik",400,16px,150%,#606060);
+  }
+  &__wrapper{
+    display: flex;
+    column-gap: 40px;
+  }
+}

@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+.popular {
+  background: rgb(249, 244, 226);
+}
+.popular .container {
+  padding: 0 0 120px 0;
+}
+.popular__wrapper {
+  display: flex;
+}
+.popular__row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 40px 0;
+}
+.popular__block {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #606060;
+}
+.popular__title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  color: #414141;
+}
+.popular__wrapp {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 8px 0;
+}
+.popular__txt {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #414141;
+  width: 206px;
+  margin: 0 0 8px 0;
+}
+.popular__starts {
+  display: flex;
+  column-gap: 5px;
+  margin: 0 0 8px 0;
+}
+.popular__box {
+  width: 272px;
+  padding: 0 9px 9px 9px;
+  background: white;
+  border-radius: 6px;
+  position: relative;
+}
+.popular__price-sec {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #E5E5E5;
+}
+.popular__price {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #414141;
+}
+.popular__cart {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #BFBFBF;
+}
+.popular__btn {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #70C05B;
+  padding: 10px 0;
+  width: 100%;
+  border: 2px solid #70C05B;
+  border-radius: 8px;
+  background: transparent;
+}
+.popular__btn:hover {
+  background: #FF6633;
+  color: #ffffff;
+  border: 2px solid #FF6633;
+}
+.popular__pic {
+  width: 252px;
+}
+.popular__heart {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+}
+.popular__num {
+  width: 40px;
+  height: 24px;
+  background: #FF6633;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  position: absolute;
+  top: 120px;
+  left: 8px;
+}
+.popular__move {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=popular.css.map */

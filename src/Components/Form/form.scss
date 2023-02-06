@@ -1,9 +1,9 @@
 @import "./src/scss/base/mixins";
-body{
-  overflow: hidden;
-}
+
 .popup{
   position: fixed;
+  top: 0;
+  left: 0;
   min-width: 100vw;
   min-height: 100vh;
   background: rgba(252, 213, 186, 0.8);

@@ -1,0 +1,44 @@
+@import "../../../scss/base/mixins";
+.offer{
+  background:rgba(249, 244, 226, 1);
+  .container{
+     padding:0 0 120px 0;
+  }
+  &__title{
+    @include text("Rubik",700,36px,150%,#414141);
+    margin:0 0 40px 0;
+  }
+  &__wrapper{
+    display: flex;
+    column-gap: 40px;
+  }
+  &__box{
+    display: flex;
+    align-items: center;
+    background: #FCD5BA;
+    padding: 7px 31px 8px 40px;
+    border-radius: 4px;
+    width: 584px;
+    box-shadow: 0px 8px 16px rgba(202, 147, 96, 0.5);
+  }
+  &__block{
+    background: #E5FFDE;
+    display: flex;
+    column-gap: 51px;
+    align-items: center;
+    padding: 14px 42px 16px 21px;
+    width: 584px;
+  }
+  &__subtitle{
+    @include text("Rubik",700,24px,150%, #414141);
+    width: 258px;
+  }
+  &__txt{
+    @include text("Rubik",400,16px,150%,#414141);
+    width: 258px;
+  }
+  &__img{
+    width: 206px;
+    height: 138px;
+  }
+}
