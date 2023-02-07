@@ -1,22 +1,25 @@
 import React, {useEffect, useState} from 'react';
-import logo from "../../Stock/img/image (3).png";
+import Skeleton from "./Sceleton/Skeleton"
 import "./cartNew.scss"
 import axios from "axios";
 const CartNew = () => {
     const [newCategory,setNeaCategory] = useState([])
+    const [isLoading,setIsLoading] = useState(false)
 
     useEffect(() => {
         axios("http://localhost:8080/products")
             .then(({data}) => setNeaCategory(data))
             .catch((err) => alert('Ошибка'))
+          setTimeout(() => setIsLoading(true),1000)
     },[])
 
     return (
         <div  className={'addCart'}>
             {
-                newCategory.filter((item,idx) => item.status === 'sale').map((el) =>(
-                    <div key={el.id} className="addCart__box">
-                        <div className="addCart__heart">
+                isLoading ? newCategory.filter((item,idx) => item.status === 'sale').map((el) =>(
+
+                   <div key={el.id} className="addCart__box">
+                         <div className="addCart__heart">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g opacity="0.5">
                                     <rect width="32" height="32" rx="4" fill="#F3F2F1"/>
@@ -64,7 +67,8 @@ const CartNew = () => {
                         </div>
                         <button className='addCart__btn'>В корзину</button>
                     </div>
-                ))
+                )
+                ): [...new Array(4)].map((_,index) => <Skeleton key={index}/>)
             }
 
         </div>
