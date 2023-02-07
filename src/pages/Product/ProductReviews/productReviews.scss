@@ -1,20 +1,25 @@
 @import "./src/scss/base/mixins";
 
-.product__Reviews{
-  margin-bottom: 120px;
+.productReviews{
+  padding-bottom: 120px;
+  background: rgba(249, 244, 226, 1);
 }
 .reviews{
   margin-top: 44px;
   display: flex;
-  margin-bottom: 120px;
+
+
 
 }
 .rating{
   margin-right: 146px;
   &__all{
+    align-items: center;
+    width: 166px;
     margin-bottom: 22px;
     display: flex;
     &-number{
+
       margin-left: 10px;
       @include text("Rubik",700,18px,150%,#414141);
 
@@ -26,6 +31,10 @@
     display: flex;
     flex-direction: column;
     row-gap: 8px;
+  }
+  &__others div{
+    display: flex;
+    justify-content: space-between;
   }
 
 
@@ -52,6 +61,7 @@
 
 }
 .opinion{
+
   display: flex;
   gap: 8px;
   &__choose{
