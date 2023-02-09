@@ -2,21 +2,14 @@ import React, {useEffect, useState} from 'react';
 import Skeleton from "./Sceleton/Skeleton"
 import "./cartNew.scss"
 import axios from "axios";
+import {useDispatch, useSelector} from "react-redux";
+import {getAllStatus} from "../../../../redux/reducer/products";
 const CartNew = () => {
-    const [newCategory,setNeaCategory] = useState([])
-    const [isLoading,setIsLoading] = useState(false)
-
-    useEffect(() => {
-        axios("http://localhost:8080/products")
-            .then(({data}) => setNeaCategory(data))
-            .catch((err) => alert('Ошибка'))
-          setTimeout(() => setIsLoading(true),1000)
-    },[])
-
+    const {data} = useSelector(state => state.products)
+    const {listOfAllStatus} = useSelector(state => state.products)
     return (
         <div  className={'addCart'}>
-            {
-                isLoading ? newCategory.filter((item,idx) => item.status === 'sale').map((el) =>(
+            {data.filter((item,idx) => item.status === 'new').map((el) =>(
 
                    <div key={el.id} className="addCart__box">
                          <div className="addCart__heart">
@@ -68,7 +61,7 @@ const CartNew = () => {
                         <button className='addCart__btn'>В корзину</button>
                     </div>
                 )
-                ): [...new Array(4)].map((_,index) => <Skeleton key={index}/>)
+                )
             }
 
         </div>
