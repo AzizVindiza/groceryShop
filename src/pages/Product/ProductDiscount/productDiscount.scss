@@ -1,9 +1,19 @@
+.productDiscount{
+  background: rgba(249, 244, 226, 1);
+
+
+}
 .discount{
+
   &__sale{
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+  &__all{
+    display: flex;
+  }
+
   &__wrapper{
     display: flex;
 
