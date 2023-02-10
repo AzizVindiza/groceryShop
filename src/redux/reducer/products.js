@@ -1,6 +1,5 @@
 import {createSlice} from "@reduxjs/toolkit";
-import axios from "axios";
-import data from "../../utils/data";
+
 
 const initialState = {
     data:[],
@@ -24,9 +23,15 @@ let productsSlice = createSlice({
                 if (acc.includes(el.status)) return acc;
                 return [...acc,el.status]
             },[])
+        },
+        getSearch:(state,action)=>{
+            state.filter={
+                ...state.filter,
+                name:action.payload
+            }
         }
     }
 })
 
-export const {setAllProducts,getAllStatus} = productsSlice.actions
+export const {setAllProducts,getAllStatus,getSearch} = productsSlice.actions
 export default productsSlice.reducer

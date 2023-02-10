@@ -85,7 +85,7 @@
     },
     {
       "id": 7,
-      "img": "./assets/products/img/sale-milk.jfif",
+      "img": "./assets/products/img/sale-milk.png",
       "price": "28.20",
       "name": "Сгущенное молоко «ПОЛЕСЬЕ GS12»",
       "status": "sale",
@@ -93,7 +93,7 @@
       "discountPercent": 0
     },
     {
-      "id": 7,
+      "id": 8,
       "img": "./assets/products/img/kzs.png",
       "price": "139.99",
       "name": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
