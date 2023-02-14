@@ -5,45 +5,41 @@ import "./productSale.scss"
 import rating from "../../ComponentsProduct/ProductImage/rating.png";
 import axios from "axios";
 import HeartFavorite from "../../../../Components/HeartFavorite";
+import {useSelector} from "react-redux";
 
 
 const ProductSale = () => {
-    const [discount,setDiscount] = useState([])
+    const {data} = useSelector(state => state.products)
 
-    useEffect(() => {
-        axios("http://localhost:8080/products")
-            .then(({data}) => setDiscount(data))
-            .catch((err) => console.log(err) )
-    },[])
     return (
         <>
             {
-                discount.filter((item)=> item.discount === true).map((el) =>(
+                data.filter((item)=> item.status === "new").slice(0,4).map((el) =>(
 
-                    <div className="cart" key={el.id}>
-                        <div className="cart__img">
+                    <div className="SaleCard" key={el.id}>
+                        <div className="ProductCard__img">
                             <img src={`${el.img}`} alt=""/>
-                            <HeartFavorite/>
-                            <span className="cart__discount">{`${el.discountPercent}%`}</span>
+                            <HeartFavorite class={"SaleCard__favorite"}/>
+                            <span className="SaleCard__discount">{`${el.discountPercent}%`}</span>
 
                         </div>
-                        <div className="cart__price">
-                            <div className="cart__price-left">
-                                <span className="cart__price-new">{`${el.price}`}</span>
-                                <span className="cart__price-text">С картой</span>
+                        <div className="SaleCard__price">
+                            <div className="SaleCard__price-left">
+                                <span className="SaleCard__price-new">{`${el.price}`}</span>
+                                <span className="SaleCard__price-text">С картой</span>
 
 
                             </div>
-                            <div className="cart__price-right">
-                                <span className="cart__price-old">{`${el.price}`}</span>
-                                <span className="cart__price-text">Обычная</span>
+                            <div className="SaleCard__price-right">
+                                <span className="SaleCard__price-old">{`${el.price}`}</span>
+                                <span className="SaleCard__price-text">Обычная</span>
                             </div>
                         </div>
-                        <p className="cart__text">{`${el.name}`}</p>
-                        <div className="cart__rating">
+                        <p className="SaleCard__text">{`${el.name}`}</p>
+                        <div className="SaleCard__rating">
                             <img src={rating} alt=""/>
                         </div>
-                        <button className="cart__btn">В корзину</button>
+                        <button className="SaleCard__btn">В корзину</button>
                     </div>
                     )
 
