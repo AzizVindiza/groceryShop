@@ -1,29 +1,26 @@
-.productName{
-  font-family: 'Rubik';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 150%;
-  /* identical to box height, or 36px */
+@import "../../../scss/base/mixins";
 
-
-  /* Main/onSurface */
-
-  color: #414141;
-
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+.cart__favorite{
+  position: static;
 }
+.product{
+
+  background: rgba(249, 244, 226, 1);
+
+  padding-bottom: 120px;
 
 
-.info{
-  display: flex;
-  margin: 24px 0;
-  &__circle{
+  &__info{
+    display: flex;
+    margin: 24px 0;
+  }
+
+  &__name{
+
+    @include text("Rubik",700,24px,150%,#414141);
+
+  }
+  &__number{
     margin-right:24px ;
   }
   &__rating{
@@ -47,7 +44,7 @@
   }
 }
 .basket{
-  margin-bottom: 120px;
+
   display: flex;
   &__img{
     margin-right: 40px;
@@ -87,28 +84,14 @@
     row-gap: 6px;
     margin-right: 113px;
     &-price{
-      font-family: 'Rubik',sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 150%;
+      @include text("Rubik",400,24px,150%,#606060);
       display: flex;
       align-items: center;
-      color: #606060;
+
 
     }
     &-text{
-      font-family: 'Rubik',sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 150%;
-      /* identical to box height, or 18px */
-
-
-      /* Grayscale / Light */
-
-      color: #BFBFBF;
+      @include text("Rubik",400,12px,150%,#BFBFBF);
 
     }
 
@@ -118,27 +101,16 @@
     display: flex;
     flex-direction: column;
     &-price{
-      font-family: 'Rubik',sans-serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 150%;
+      @include text("Rubik",700,36px,150%,#414141);
 
-
-      color: #414141;
 
     }
     &-text{
       gap: 6px;
       display: flex;
-      /* Desc/Text/XS */
+      @include text("Rubik",400,12px,150%,#BFBFBF);
 
-      font-family: 'Rubik',sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 150%;
-      color: #BFBFBF;
+
       align-items: center;
 
 
@@ -152,17 +124,8 @@
     align-items: center;
     background: #FF6633;
     border-radius: 4px;
-    font-family: 'Rubik',sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 150%;
+    @include text("Rubik",400,24px,150%,#FFFFFF);
 
-    text-align: center;
-
-    /* Main/onPrimary */
-
-    color: #FFFFFF;
 
 
 
@@ -187,7 +150,7 @@
   &__bonus{
     display: flex;
     gap: 7px;
-    &-boll{
+    &-circle{
       display: block;
       width: 20px;
       height: 20px;
@@ -196,19 +159,13 @@
       color: #70C05B;
     }
     &-text{
-      font-family: 'Rubik',sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 150%;
+      @include text("Rubik",400,12px,150%,#70C05B);
+
 
       display: flex;
       align-items: center;
       text-align: center;
 
-      /* Main/Secondary */
-
-      color: #70C05B;
 
     }
 
@@ -222,28 +179,11 @@
 
     }
     &-text{
-      font-family: 'Rubik',sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 150%;
-      /* or 18px */
-
-      display: flex;
-      align-items: center;
-      text-align: center;
-
-      /* Grayscale / Hardest */
-
-      color: #606060;
+      @include text("Rubik",400,12px,150%,#606060);
 
 
-      /* Inside auto layout */
 
-      flex: none;
-      order: 1;
-      align-self: stretch;
-      flex-grow: 1;
+
     }
   }
   &__brand{
@@ -256,16 +196,9 @@
     width: 376px;
     height: 26px;
 
-    /* Grayscale / Lightest */
-
     background: #F3F2F1;
 
-    /* Inside auto layout */
 
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
   }
   &__country{
     display: flex;
@@ -276,10 +209,7 @@
 
     width: 376px;
     height: 26px;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
+
   }
   &__pack{
     display: flex;
@@ -295,12 +225,6 @@
 
     background: #F3F2F1;
 
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
   }
 
   &__similar{
@@ -318,46 +242,17 @@
 
 
       margin-bottom: 8px;
-      font-family: 'Rubik', sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 150%;
+      @include text("Rubik",400,16px,150%,#606060);
 
-      color: #606060;
-
-
-      flex: none;
-      order: 0;
-      align-self: stretch;
-      flex-grow: 0;
 
     }
     &-price{
-      font-family: 'Rubik',sans-serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 150%;
-      /* identical to box height, or 27px */
+      @include text("Rubik",700,18px,150%,#414141);
 
-
-      /* Main/onSurface */
-
-      color: #414141;
-
-
-      /* Inside auto layout */
-
-      flex: none;
-      order: 0;
-      flex-grow: 0;
 
     }
 
-
   }
-
 
 }
 

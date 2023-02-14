@@ -1,16 +1,11 @@
-import product from "./img/food.png"
-import React, {useEffect, useState} from "react";
+
+import React, { useRef, } from "react";
 import "./search.scss"
-import axios from "axios";
 import Card from "../../Components/Card/Card";
+import {useDispatch, useSelector} from "react-redux";
 
 const Search = () => {
-    const [products,setProducts] = useState( [])
-    useEffect(() => {
-        axios("http://localhost:8080/products")
-            .then(({data})=>setProducts(data))
-            .catch((err)=>console.log(err))
-    },[])
+    const {filter,data} = useSelector((state)=>state.products);
     return (
         <section className="search">
             <div className="container">
@@ -18,7 +13,7 @@ const Search = () => {
                 <p className="search__request">по запросу <span>Еда</span></p>
                 <div className="search__goods">
                     {
-                        products.map(item=>(
+                        data.filter((item)=>item.name.toLowerCase().includes(filter.name.toLowerCase())).map(item=>(
                             <Card key={item.id} img={item.img} price={item.price} name={item.name} discount={item.discount} discountPercent={item.discountPercent}/>
                         ))
                     }

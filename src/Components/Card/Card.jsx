@@ -1,11 +1,18 @@
 import React from 'react';
 import "./card.scss"
 
-const Card = ({img,price,name,discount,discountPercent,key}) => {
+
+const Card = ({img,price,name,discount,discountPercent}) => {
     return (
         <div className="card">
             <div className="card-img">
+                <label name="favorite" for="card" className="card__label">
+                    <input id="card" type="checkbox" className="card__favorite"/>
+                </label>
                 <img src={img} alt="product"/>
+                {discount ? (
+                    <div className="card__discount">{`-${discountPercent}%`}</div>
+                ) : ""}
             </div>
             <div className="card__price">
                 {

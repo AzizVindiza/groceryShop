@@ -1,21 +1,25 @@
 import React, {useEffect, useState} from 'react';
-import logo from "../img/image (3).png";
 import "./stockCart.scss"
 import axios from "axios";
-import data from "../../../../utils/data";
+import Skeleton from "../../New/CartNew/Sceleton/Skeleton";
 const StockCart = () => {
     const [discount,setDiscount] = useState([])
+    const [loading,setLoading] = useState(false)
 
     useEffect(() => {
        axios("http://localhost:8080/products")
            .then(({data}) => setDiscount(data))
-           .catch((err) => console.log(err) )
+           .catch((err) => console.log(err))
+        setTimeout(() =>{
+            setLoading(true)
+        },1000)
+
     },[])
     return (
         <div className="stockCart">
             {
-                discount.filter((item) => item.discount === true).map((el) => (
-                    <div key={el.id} className="stockCart__box">
+                loading ? discount.filter((item) => item.discount === true).map((el) => (
+                     <div key={el.id} className="stockCart__box">
                         <div className="stockCart__num">
                             <h5 className="stockCart__move">{`${el.discountPercent}%`}</h5>
                         </div>
@@ -71,8 +75,9 @@ const StockCart = () => {
                         </div>
                         <button className='stockCart__btn'>В корзину</button>
                     </div>
-                ))
+                )):  [... new Array(4)].map((_,id) => <Skeleton/> )
             }
+
 
 
         </div>

@@ -1,35 +1,31 @@
+@import "./src/scss/base/mixins";
+.star-rating{
+  margin-top: 8px;
+}
+.productReviews{
+  padding-bottom: 120px;
+  background: rgba(249, 244, 226, 1);
+}
 .reviews{
   margin-top: 44px;
   display: flex;
-  margin-bottom: 120px;
+
+
 
 }
 .rating{
   margin-right: 146px;
   &__all{
+    align-items: center;
+    width: 166px;
     margin-bottom: 22px;
+    display: flex;
     &-number{
+
       margin-left: 10px;
-      /* Desc/Text-Bold/M */
-
-      font-family: 'Rubik',sans-serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 150%;
-      /* identical to box height, or 27px */
+      @include text("Rubik",700,18px,150%,#414141);
 
 
-      /* Main/onSurface */
-
-      color: #414141;
-
-
-      /* Inside auto layout */
-
-      flex: none;
-      order: 1;
-      flex-grow: 0;
     }
 
   }
@@ -37,6 +33,10 @@
     display: flex;
     flex-direction: column;
     row-gap: 8px;
+  }
+  &__others div{
+    display: flex;
+    justify-content: space-between;
   }
 
 
@@ -48,52 +48,40 @@
     display: flex;
     align-items: center;
     margin-bottom: 12px;
-    font-family: 'Rubik',sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 150%;
-    /* identical to box height, or 27px */
-
-
-    /* Main/onSurface */
-
-    color: #414141;
+    @include text("Rubik",400,18px,150%,#414141);
 
   }
   &__rating{
     margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+  }
+
+  &__date{
+    @include text("Rubik",400,12px,150%,#8F8F8F);
 
   }
   &__text{
     margin-bottom: 44px;
-    font-family: 'Rubik',sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    width: 688px;
-    color: #414141;
+    @include text("Rubik",700,16px,150%,#414141);
 
   }
 
 }
 .opinion{
+
   display: flex;
+  align-items: center;
   gap: 8px;
+  margin-bottom: 18px;
   &__choose{
-    font-family: 'Rubik',sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 150%;
-    /* identical to box height, or 27px */
+    @include text("Rubik",700,18px,150%,#414141);
 
 
-    /* Main/onSurface */
 
-    color: #414141;
-    margin-bottom: 18px;
+
 
   }
   &__text{
@@ -119,28 +107,17 @@
     width: 188px;
     height: 40px;
 
-    /* Main/PrimaryMuted */
-
     background: #FCD5BA;
     border-radius: 4px;
 
-    /* Desc/Text/S */
-
-    font-family: 'Rubik',sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    /* identical to box height, or 24px */
+    @include text("Rubik",400,16px,150%,#FF6633);
 
     display: flex;
     align-items: center;
     text-align: center;
 
-    /* Main / Primary */
-
-    color: #FF6633;
 
 
   }
 }
+

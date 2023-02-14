@@ -1,22 +1,18 @@
 import React, {useEffect, useState} from 'react';
-import logo from "../../Stock/img/image (3).png";
+import Skeleton from "./Sceleton/Skeleton"
 import "./cartNew.scss"
 import axios from "axios";
+import {useDispatch, useSelector} from "react-redux";
+import {getAllStatus} from "../../../../redux/reducer/products";
 const CartNew = () => {
-    const [newCategory,setNeaCategory] = useState([])
-
-    useEffect(() => {
-        axios("http://localhost:8080/products")
-            .then(({data}) => setNeaCategory(data))
-            .catch((err) => alert('Ошибка'))
-    },[])
-
+    const {data} = useSelector(state => state.products)
+    const {listOfAllStatus} = useSelector(state => state.products)
     return (
         <div  className={'addCart'}>
-            {
-                newCategory.filter((item,idx) => item.status === 'sale').map((el) =>(
-                    <div key={el.id} className="addCart__box">
-                        <div className="addCart__heart">
+            {data.filter((item,idx) => item.status === 'new').map((el) =>(
+
+                   <div key={el.id} className="addCart__box">
+                         <div className="addCart__heart">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g opacity="0.5">
                                     <rect width="32" height="32" rx="4" fill="#F3F2F1"/>
@@ -64,7 +60,8 @@ const CartNew = () => {
                         </div>
                         <button className='addCart__btn'>В корзину</button>
                     </div>
-                ))
+                )
+                )
             }
 
         </div>

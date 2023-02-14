@@ -2,17 +2,19 @@ import React from 'react';
 
 import './productCart.scss'
 
-import halal from '../ProductImage/halal.png'
-import favorite from '../ProductImage/favoriteHeart.png'
-import rating from '../ProductImage/rating.png'
+import sausage from '../../ComponentsProduct/ProductImage/sausage.png'
+import favorite from '../../ComponentsProduct/ProductImage/favoriteHeart.png'
+import rating from '../../ComponentsProduct/ProductImage/rating.png'
+import HeartFavorite from "../../../../Components/HeartFavorite";
 
 const ProductCart = () => {
     return (
         <>
             <div className="cart">
                 <div className="cart__img">
-                    <img src={halal} alt=""/>
-                    <img src={favorite} alt="" className="cart__favorite"/>
+                    <img src={sausage} alt=""/>
+                    <HeartFavorite/>
+
 
 
                 </div>

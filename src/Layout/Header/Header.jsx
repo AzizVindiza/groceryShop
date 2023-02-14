@@ -5,13 +5,18 @@ import {Link} from "react-router-dom";
 import Catalog from "./Catolog/Catalog";
 import Search from "./Search/Search";
 import User from "./User/User";
+import {useDispatch, useSelector} from "react-redux";
+import {getSearch} from "../../redux/reducer/products";
+
 
 const Header = () => {
+    const {filter} = useSelector((state)=>state.products)
+    const dispatch = useDispatch()
     return (
         <header className="header">
             <div className="container">
-                <h1 className="header__logo">
-                    <img src={logo} alt="Северяночка"/>
+                <h1 className="header__logo" onClick={()=>dispatch(getSearch(""))}>
+                    <Link to={"/"}><img src={logo} alt="Северяночка"/></Link>
                 </h1>
                 <Catalog/>
                 <Search/>
