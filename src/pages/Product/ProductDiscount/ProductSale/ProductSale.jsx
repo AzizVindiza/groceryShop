@@ -25,13 +25,13 @@ const ProductSale = () => {
                         </div>
                         <div className="SaleCard__price">
                             <div className="SaleCard__price-left">
-                                <span className="SaleCard__price-new">{`${el.price}`}</span>
+                                <span className="SaleCard__price-new">{`${el.price} ₽`}</span>
                                 <span className="SaleCard__price-text">С картой</span>
 
 
                             </div>
                             <div className="SaleCard__price-right">
-                                <span className="SaleCard__price-old">{`${el.price}`}</span>
+                                <span className="SaleCard__price-old">{`${(Number(el.price) - (Number(el.price) / 100 * el.discountPercent).toFixed(2))} ₽`}</span>
                                 <span className="SaleCard__price-text">Обычная</span>
                             </div>
                         </div>
@@ -41,6 +41,7 @@ const ProductSale = () => {
                         </div>
                         <button className="SaleCard__btn">В корзину</button>
                     </div>
+
                     )
 
                 )
