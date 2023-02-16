@@ -1,34 +1,34 @@
 import React from 'react';
 import "./card.scss"
+import HeartFavorite from "../HeartFavorite";
 
 
-const Card = ({img,price,name,discount,discountPercent}) => {
+const Card = ({item}) => {
+
     return (
         <div className="card">
             <div className="card-img">
-                <label name="favorite" for="card" className="card__label">
-                    <input id="card" type="checkbox" className="card__favorite"/>
-                </label>
-                <img src={img} alt="product"/>
-                {discount ? (
-                    <div className="card__discount">{`-${discountPercent}%`}</div>
+                <HeartFavorite item={item} class={"card__label"}/>
+                <img src={item.img} alt="product"/>
+                {item.discount ? (
+                    <div className="card__discount">{`-${item.discountPercent}%`}</div>
                 ) : ""}
             </div>
             <div className="card__price">
                 {
-                    discount ? (
+                    item.discount ? (
                         <div className="card__price-withCard">
-                            <p className="card__price-value">{(Number(price) - (Number(price) / 100 * discountPercent).toFixed(2))} <span>₽</span></p>
+                            <p className="card__price-value">{(Number(item.price) - (Number(item.price) / 100 * item.discountPercent).toFixed(2))} <span>₽</span></p>
                             <p className="card__price-text">С картой</p>
                         </div>
                     ) : ""
                 }
                 <div className="card__price-withoutCard">
-                    <p style={{fontWeight: !discount ? "700" : "400",color:!discount ? "#414141" : ""}} className="card__price-value">{price} <span>₽</span></p>
+                    <p style={{fontWeight: !item.discount ? "700" : "400",color:!item.discount ? "#414141" : ""}} className="card__price-value">{item.price} <span>₽</span></p>
                     <p className="card__price-text">Обычная</p>
                 </div>
             </div>
-            <div className="card-title">{name}</div>
+            <div className="card-title">{item.name}</div>
             <div className="card-grade">
                 <svg width="256" height="16" viewBox="0 0 256 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.10326 1.81698C7.47008 1.07374 8.52992 1.07374 8.89674 1.81699L10.1185 4.29249C10.2641 4.58763 10.5457 4.7922 10.8714 4.83953L13.6033 5.2365C14.4235 5.35568 14.751 6.36365 14.1575 6.94219L12.1807 8.8691C11.945 9.09884 11.8375 9.42984 11.8931 9.75423L12.3598 12.4751C12.4999 13.292 11.6424 13.9149 10.9088 13.5293L8.46534 12.2446C8.17402 12.0915 7.82598 12.0915 7.53466 12.2446L5.09119 13.5293C4.35756 13.9149 3.50013 13.292 3.64024 12.4751L4.1069 9.75423C4.16254 9.42984 4.05499 9.09884 3.81931 8.8691L1.8425 6.94219C1.24898 6.36365 1.57649 5.35568 2.39671 5.2365L5.12859 4.83953C5.4543 4.7922 5.73587 4.58763 5.88153 4.29249L7.10326 1.81698Z" fill="#FF6633"/>
