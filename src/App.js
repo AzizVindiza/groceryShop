@@ -1,7 +1,6 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {Route, Routes} from "react-router-dom";
 import { ChakraProvider,  } from '@chakra-ui/react'
-import {data} from "./utils/data";
 import Layout from "./Layout/Layout";
 import Home from "./pages/Home/Home";
 import Category from "./pages/Category/Category";
@@ -15,9 +14,19 @@ import Cart from "./pages/Cart/Cart";
 import Search from "./pages/Search/Search";
 
 import "./scss/style.scss"
+import {useDispatch, useSelector} from "react-redux";
+import axios from "axios";
+import {getAllStatus, setAllProducts} from "./redux/reducer/products";
 const App = () => {
- 
-
+    const {filter} = useSelector((state)=>state.products)
+    const dispatch = useDispatch()
+    useEffect(()=>{
+        axios("http://localhost:8080/products")
+            .then(({data})=>{
+                dispatch(setAllProducts(data))
+                dispatch(getAllStatus(data))
+            })
+    },[]);
     return (
         <ChakraProvider>
        <Routes>
@@ -36,7 +45,7 @@ const App = () => {
                <Route path={"about"} element={<About/>}/>
                <Route path={"vacancies"} element={<Vacancies/>}/>
                {/*Милана*/}
-               <Route path={"cart"} element={<Cart/>}/>
+               <Route path={"Cart"} element={<Cart/>}/>
                {/*Адилет*/}
                <Route path={"search"} element={<Search/>}/>
                {/*Руслан*/}

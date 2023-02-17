@@ -1,6 +1,7 @@
 @import "./src/scss/base/mixins";
 
-.cart{
+.SaleCard{
+  padding: 9px;
   background: #FFFFFF;
   margin-top: 40px;
   display: flex;
@@ -22,8 +23,6 @@
 
   }
   &__discount{
-
-
     width: 40px;
     height: 24px;
     background: #FF6633;
@@ -49,84 +48,47 @@
     &-new {
       display: flex;
       flex-direction: column;
-      font-family: 'Rubik',sans-serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 150%;
-
-      color: #414141;
+      @include text("Rubik",700,18px,150%,#414141);
 
 
 
     }
     &-old{
-      font-family: 'Rubik',sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 150%;
-      /* identical to box height, or 24px */
-
+      @include text("Rubik",400,16px,150%,#606060);
       display: flex;
       align-items: center;
-
-      /* Grayscale / Hardest */
-
-      color: #606060;
 
 
 
     }
-    &-text{
-
-
-      font-family: 'Rubik',sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 150%;
-      /* identical to box height, or 18px */
-
-
-      /* Grayscale / Light */
-
-      color: #BFBFBF;
-
-      width: 400px;
+    &__text{
+      width: 256px;
+      @include text("Rubik",700,18px,150%,#414141);
 
     }
 
   }
   &__text{
     height: 48px;
-    overflow: hidden;
     width: 256px;
-    font-family: 'Rubik',sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 150%;
-    /* identical to box height, or 27px */
-
-
-    /* Main/onSurface */
-
-    color: #414141;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    @include text("Rubik",700,18px,150%,#414141);
+    overflow: hidden;
   }
   &__rating{
     margin: 8px 0;
   }
   &__btn{
+    @include text("Rubik",700,16px,150%,#70C05B);
+    padding: 10px 0 ;
 
-
+    border: 2px solid #70C05B;
+    border-radius: 8px;
+    background: transparent;
+    &:hover{
+      background: #FF6633;
+      color: #ffffff;
+      border:2px solid #FF6633;
+    }
   }
 
 }

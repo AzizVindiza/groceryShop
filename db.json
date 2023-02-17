@@ -36,7 +36,8 @@
       "name": "Г/Ц Блинчики с мясом вес, Россия",
       "status": "new",
       "discount": true,
-      "discountPercent": 50
+      "discountPercent": 50,
+      "inStock": false
     },
     {
       "id": 2,
@@ -45,7 +46,8 @@
       "name": "Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...",
       "status": "new",
       "discount": true,
-      "discountPercent": 50
+      "discountPercent": 50,
+      "inStock": true
     },
     {
       "id": 3,
@@ -54,7 +56,8 @@
       "name": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчи...",
       "status": "new",
       "discount": true,
-      "discountPercent": 50
+      "discountPercent": 50,
+      "inStock": false
     },
     {
       "id": 4,
@@ -63,7 +66,8 @@
       "name": "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
       "status": "new",
       "discount": true,
-      "discountPercent": 50
+      "discountPercent": 50,
+      "inStock": true
     },
     {
       "id": 5,
@@ -72,7 +76,8 @@
       "name": "Сосиськи «ДЕСНА-ПОЛЕСЬЕ GS12»",
       "status": "sale",
       "discount": false,
-      "discountPercent": 0
+      "discountPercent": 0,
+      "inStock": true
     },
     {
       "id": 6,
@@ -81,25 +86,28 @@
       "name": "Колбаса «ДЕСНА GF22» 'Говяжья', Россия",
       "status": "sale",
       "discount": false,
-      "discountPercent": 0
+      "discountPercent": 0,
+      "inStock": false
     },
     {
       "id": 7,
-      "img": "./assets/products/img/sale-milk.jfif",
+      "img": "./assets/products/img/sale-milk.png",
       "price": "28.20",
       "name": "Сгущенное молоко «ПОЛЕСЬЕ GS12»",
       "status": "sale",
       "discount": false,
-      "discountPercent": 0
+      "discountPercent": 0,
+      "inStock": true
     },
     {
-      "id": 7,
+      "id": 8,
       "img": "./assets/products/img/kzs.png",
       "price": "139.99",
       "name": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
       "status": "sale",
       "discount": false,
-      "discountPercent": 0
+      "discountPercent": 0,
+      "inStock": false
     },
     {
       "id": 9,
@@ -108,7 +116,8 @@
       "name": "Молоко сгущенное РОГАЧЕВ Егорка, цельное с сахаром...",
       "status": "new",
       "discount": false,
-      "discountPercent": 0
+      "discountPercent": 0,
+      "inStock": false
     },
     {
       "id": 10,
@@ -117,7 +126,8 @@
       "name": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
       "status": "new",
       "discount": false,
-      "discountPercent": 0
+      "discountPercent": 0,
+      "inStock": true
     }
   ],
   "list-of-categories": [

@@ -28,7 +28,6 @@
   }
   &__label{
     position: absolute;
-    background: url("./img/heart.png") no-repeat;
     top: 10px;
     right: 10px;
     width: 24px;
@@ -77,7 +76,7 @@
     @include text("Rubik",400,16px,150%,#70C05B);
     transition: all 0.2s ease-in-out;
     &:hover{
-      transition: all 0.2s ease-in-out;
+      transition: all 0.4s ease-in-out;
       background: #FF6633;
       color: white;
       border-color: #FF6633;

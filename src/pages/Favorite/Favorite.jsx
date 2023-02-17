@@ -9,11 +9,16 @@ import {
     RangeSliderFilledTrack,
     RangeSliderThumb,
   } from '@chakra-ui/react';
-import { Switch, FormLabel } from '@chakra-ui/react'; 
-
+import { Switch, FormLabel } from '@chakra-ui/react';
+import {useDispatch, useSelector} from "react-redux";
+import Card from "../../Components/Card/Card";
+import {setInStock,setStatus} from "../../redux/reducer/favorite";
 
 const Favorite = () => {
 
+    const {data,filter} = useSelector(state=>state.favorite)
+
+    const dispatch = useDispatch()
     
     return (
         <>
@@ -51,13 +56,12 @@ const Favorite = () => {
 </RangeSlider>
 </div>
 <ul className='filter__list'>
-    <li className='filter__list-item'>Молоко</li>
-    <li className='filter__list-item'>Сливки</li>
-    <li className='filter__list-item'>Яйцо</li>
+    <li onClick={()=>dispatch(setStatus("sale"))}>sale</li>
+    <li onClick={()=>dispatch(setStatus("new"))}>new</li>
 </ul>
 
 <div className="toggle">
-      <Switch id='isAvailable' colorScheme='green' />
+      <Switch onChange={(e)=>dispatch(setInStock(e.target.checked))} id='isAvailable' colorScheme='green' />
   <FormLabel htmlFor='available' mb='0'>
   В наличии
   </FormLabel>
@@ -91,128 +95,27 @@ const Favorite = () => {
                         </div>
                         {/* карточка продуктов */}
                         <div className="products-favorite__cards">
-                            <div className="card">
-                                <img className="card__img" src={img} alt=""/>
-                                <div className="card__info">
-                                    <div className="card__price">
-                                    <div className="card__price-wrapper">
-                                        <p className="card__price-card">139,99<span>₽</span></p>
-                                        <span>С картой</span> 
-                                    </div>
-                                    <div className="card__price-wrapper">
-                                        <p className="card__price-regular">139,99<span>₽</span> </p> 
-                                        <span>Обычная</span>
-                                    </div>
-                                </div>
-                                
-                                <h4 className='card__title'>Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h4>
-                                <StarRating/>
-                                <button className="card__button">В корзину</button>
-                                </div>
-                                
-                            </div>
-                            <div className="card">
-                                <img className="card__img" src={img} alt=""/>
-                                <div className="card__info">
-                                    <div className="card__price">
-                                    <div className="card__price-wrapper">
-                                        <p className="card__price-card">139,99<span>₽</span></p>
-                                        <span>С картой</span> 
-                                    </div>
-                                    <div className="card__price-wrapper">
-                                        <p className="card__price-regular">139,99<span>₽</span> </p> 
-                                        <span>Обычная</span>
-                                    </div>
-                                </div>
-                                
-                                <h4 className='card__title'>Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h4>
-                                <StarRating/>
-                                <button className="card__button">В корзину</button>
-                                </div>
-                                
-                            </div>
-                            <div className="card">
-                                <img className="card__img" src={img} alt=""/>
-                                <div className="card__info">
-                                    <div className="card__price">
-                                    <div className="card__price-wrapper">
-                                        <p className="card__price-card">139,99<span>₽</span></p>
-                                        <span>С картой</span> 
-                                    </div>
-                                    <div className="card__price-wrapper">
-                                        <p className="card__price-regular">139,99<span>₽</span> </p> 
-                                        <span>Обычная</span>
-                                    </div>
-                                </div>
-                                
-                                <h4 className='card__title'>Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h4>
-                                <StarRating/>
-                                <button className="card__button">В корзину</button>
-                                </div>
-                                
-                            </div>
-                            <div className="card">
-                                <img className="card__img" src={img} alt=""/>
-                                <div className="card__info">
-                                    <div className="card__price">
-                                    <div className="card__price-wrapper">
-                                        <p className="card__price-card">139,99<span>₽</span></p>
-                                        <span>С картой</span> 
-                                    </div>
-                                    <div className="card__price-wrapper">
-                                        <p className="card__price-regular">139,99<span>₽</span> </p> 
-                                        <span>Обычная</span>
-                                    </div>
-                                </div>
-                                
-                                <h4 className='card__title'>Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h4>
-                                <StarRating/>
-                                <button className="card__button">В корзину</button>
-                                </div>
-                                
-                            </div>
-                            <div className="card">
-                                <img className="card__img" src={img} alt=""/>
-                                <div className="card__info">
-                                    <div className="card__price">
-                                    <div className="card__price-wrapper">
-                                        <p className="card__price-card">139,99<span>₽</span></p>
-                                        <span>С картой</span> 
-                                    </div>
-                                    <div className="card__price-wrapper">
-                                        <p className="card__price-regular">139,99<span>₽</span> </p> 
-                                        <span>Обычная</span>
-                                    </div>
-                                </div>
-                                
-                                <h4 className='card__title'>Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h4>
-                                <StarRating/>
-                                <button className="card__button">В корзину</button>
-                                </div>
-                                
-                            </div>
-                            <div className="card">
-                                <img className="card__img" src={img} alt=""/>
-                                <div className="card__info">
-                                    <div className="card__price">
-                                    <div className="card__price-wrapper">
-                                        <p className="card__price-card">139,99<span>₽</span></p>
-                                        <span>С картой</span> 
-                                    </div>
-                                    <div className="card__price-wrapper">
-                                        <p className="card__price-regular">139,99<span>₽</span> </p> 
-                                        <span>Обычная</span>
-                                    </div>
-                                </div>
-                                
-                                <h4 className='card__title'>Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h4>
-                                <StarRating/>
-                                <button className="card__button">В корзину</button>
-                                </div>
-                                
-                            </div>
+                            {
+                                data.filter((item)=>{
+                                    if(filter.inStock){
+                                        return item.inStock
+                                    }else if(filter.status.length > 0){
+                                        return item.status === filter.status
+                                    }
+                                    return item
+                                }).map((item)=>(
+                                        <Card item={item} key={item.id}/>
+                                    )
+                                )
+                            }
                         </div>
-                        <button type="button" class="products-favorite__button-showMore">Показать ещё</button>
+                        {
+
+                              data.length > 6 ? (
+                                  <button type="button" className="products-favorite__button-showMore">Показать
+                                      ещё</button>
+                              ) : data.length === 0 ? (<h2>Пусто</h2>) : ""
+                        }
 
 
                     </div>
