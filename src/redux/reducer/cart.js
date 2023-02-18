@@ -6,16 +6,17 @@ const initialState = {
     filter:{
 
     },
-    totalPrice:0
-
-
+    totalPrice: 0,
+    totalDiscount: 0
 }
 const cartSlice = createSlice({
     name : "cart",
     initialState,
     reducers: {
-         setProducts: (state,action) => {
-             state.data = state.data.findIndex((item) => item.id === action.payload.id ) > -1 ? alert('Уже есть ') : [...state.data,{...action.payload, count: 1, checked : false}]
+         setProducts: (state ,action) => {
+             state.data = state.data.findIndex((item) => item.id === action.payload.id ) > -1 ? alert('Уже есть ') : [...state.data,{...action.payload, count: 1, checked : false}];
+             state.totalPrice = state.data.reduce((acc,rec)=>acc += rec.price * rec.count,0)
+             state.totalDiscount += action.payload.discount ? ((+action.payload.price) - ((+action.payload.price) / 100 * action.payload.discountPercent).toFixed(2)) : 0
          },
          addCount: (state,action) => {
              state.data =
@@ -25,6 +26,9 @@ const cartSlice = createSlice({
                      }
                      return  item
                  } )
+             state.totalPrice = state.data.reduce((acc,rec)=>acc += rec.price * rec.count,0)
+             state.totalDiscount += action.payload.discount ? ((+action.payload.price) - ((+action.payload.price) / 100 * action.payload.discountPercent).toFixed(2)) : 0
+
          },
         removeCount: (state,action) => {
             state.data =
@@ -34,6 +38,9 @@ const cartSlice = createSlice({
                     }
                     return  item
                 } )
+            state.totalPrice = state.data.reduce((acc,rec)=>acc += rec.price * rec.count,0)
+            state.totalDiscount += action.payload.discount ? ((+action.payload.price) - ((+action.payload.price) / 100 * action.payload.discountPercent).toFixed(2)) : 0
+
         },
         removeProduct: (state,action) => {
              state.data = state.data.filter((item) => !item.checked )
@@ -51,7 +58,8 @@ const cartSlice = createSlice({
              state.data = state.data.map((item) => {
                  return {...item, checked: true }
              } )
-        }
+        },
+
     }
 
 })

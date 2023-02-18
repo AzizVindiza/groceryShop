@@ -25,7 +25,6 @@ const Home = () => {
     if(filter.name.length !== 0){
         navigate('/search')
     }
-
     return (
         <>
             <Deliver/>

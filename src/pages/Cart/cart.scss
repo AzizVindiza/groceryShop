@@ -1,9 +1,35 @@
+@import "./src/scss/base/mixins";
+
 .section-cart{
   background: #F9F4E2;
 
 }
 .cart{
 padding: 26px 0 116px;
+  .discount{
+    background: #FF6633;
+    border-radius: 4px;
+    color: white;
+    width: 53px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .del{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #8F8F8F;
+    &:after{
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background: #232323;
+    }
+  }
   &__top{
 
     position: relative;
@@ -106,6 +132,7 @@ padding: 26px 0 116px;
 
   &__item{
     display: flex;
+    align-items: center;
     position: relative;
     max-width:876px;
     margin-bottom: 24px;
@@ -143,6 +170,9 @@ padding: 26px 0 116px;
     &-prices{
       display: flex;
       column-gap: 16px;
+      p{
+        @include text("Rubik",400,16px,150%,#414141);
+      }
     }
 
     &-subtitle{
@@ -158,7 +188,7 @@ padding: 26px 0 116px;
     &-btns {
       display: flex;
       align-items: center;
-      margin-left:200px;
+      margin-left:auto;
       margin-top: 10px;
       width: 100px;
       justify-content: space-between;
@@ -194,8 +224,10 @@ padding: 26px 0 116px;
     }
 
     &-price{
+      width: 50px;
+      display: flex;
       font-family: 'Rubik',sans-serif;
-      margin-left: 50px;
+      margin-left: 30px;
       font-style: normal;
       font-weight: 700;
       font-size: 18px;
