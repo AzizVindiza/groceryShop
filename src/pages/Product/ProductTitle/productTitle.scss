@@ -1,10 +1,38 @@
 @import "../../../scss/base/mixins";
 
 .product{
+  padding: 24px 0 120px 0;
 
   background: rgba(249, 244, 226, 1);
 
-  padding-bottom: 120px;
+
+  &__order {
+    padding: 3px 0;
+    display: flex;
+    margin-bottom: 24px;
+    align-items: center;
+    column-gap: 16px;
+  }
+  &__order-item {
+    display: flex;
+    color: #414141;
+    align-items: center;
+  }
+  &__order-item:after {
+    content: url(../../Favorite/img/breadcrumb.svg);
+    display: inline;
+    margin-left: 16px;
+  }
+  &__order-item:last-child {
+    color: #8F8F8F;
+  }
+  &__order-item:last-child:after
+  {
+    content: '';
+  }
+  &__order-link {
+    color: #414141;
+  }
 
 
   &__info{

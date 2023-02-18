@@ -4,6 +4,7 @@ import Title from "../ComponentsProduct/Title/Title";
 import ProductSale from "./ProductSale/ProductSale";
 
 const ProductDiscount = () => {
+
     return (
         <section className="productDiscount">
             <div className="container">
