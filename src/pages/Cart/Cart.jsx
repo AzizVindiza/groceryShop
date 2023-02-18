@@ -3,8 +3,13 @@ import React from 'react';
 import item from './img/Item.png'
 import bread from './img/bread.png'
 import './cart.scss'
+import {useDispatch, useSelector} from "react-redux";
+import {addCount,removeCount,changeChecked,removeProduct,checkedAll} from "../../redux/reducer/cart";
+
 
 const Cart= () => {
+    const dispatch = useDispatch()
+    const  {data} = useSelector(store => store.cart)
     return (
         <>
             <section className='section-cart'>
@@ -27,159 +32,47 @@ const Cart= () => {
 </svg>
 
                                     </span>
-                                <button className='cart__top-all'>выделить все</button>
-                                <button className='cart__top-delete'>Удалить выбранные</button>
+                                <button onClick={() => dispatch(checkedAll(item)) } className='cart__top-all'>выделить все</button>
+                                <button onClick={() => dispatch(removeProduct(item))}  className='cart__top-delete'>Удалить выбранные</button>
                             </div>
                         </div>
                         <div className='cart__list'>
-                            <div className="cart__item">
+                            {
+                                data.map((item) => (
+                                    <div className="cart__item">
                                 <span className='cart__item-check'>
-                                    <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fillRule="evenodd" clipRule="evenodd" d="M11.5692 0.430959C11.6994 0.561134 11.6994 0.772189 11.5692 0.902364L4.23587 8.2357C4.10569 8.36587 3.89464 8.36587 3.76446 8.2357L0.431127 4.90236C0.300952 4.77219 0.300952 4.56113 0.431127 4.43096C0.561302 4.30078 0.772357 4.30078 0.902532 4.43096L4.00016 7.52859L11.0978 0.430959C11.228 0.300785 11.439 0.300785 11.5692 0.430959Z" fill="white"/>
-</svg>
+                                    <input onChange={()=>dispatch(changeChecked(item))} checked={item.checked} type="checkbox"/>
                                 </span>
-                                <img className="cart__item-img" src={bread} alt=""/>
-                                <div>
-                                    <p className="cart__item-title">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
-                                    <div className="cart__item-prices">
-                                        <p className="cart__item-subtitle">44,50 ₽ за шт.</p>
-                                        <p className="cart__item-subtitle">44,50 ₽ за шт.</p>
-                                        <p className="cart__item-subtitle">44,50 ₽ за шт.</p>
+                                        <img className="cart__item-img" src={item.img} alt=""/>
+                                        <div>
+                                            <p className="cart__item-title">{item.name}</p>
+                                            <div className="cart__item-prices">
+                                                <p className="cart__item-subtitle">{item.price}</p>
+                                            </div>
+                                        </div>
+                                        <div className='cart__item-btns'>
+                                            <button onClick={() => dispatch(removeCount(item))}  className="cart__item-minus">
+                                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fillRule="evenodd" clipRule="evenodd" d="M0.5 1C0.5 0.723858 0.723858 0.5 1 0.5H15C15.2761 0.5 15.5 0.723858 15.5 1C15.5 1.27614 15.2761 1.5 15 1.5H1C0.723858 1.5 0.5 1.27614 0.5 1Z" fill="white"/>
+                                                </svg>
+
+                                            </button>
+                                            <p className="cart__item-num">{item.count}</p>
+                                            <button onClick={() => dispatch(addCount(item))} className="cart__item-plus">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fillRule="evenodd" clipRule="evenodd" d="M12 4.5C12.2761 4.5 12.5 4.72386 12.5 5V19C12.5 19.2761 12.2761 19.5 12 19.5C11.7239 19.5 11.5 19.2761 11.5 19V5C11.5 4.72386 11.7239 4.5 12 4.5Z" fill="white"/>
+                                                    <path fillRule="evenodd" clipRule="evenodd" d="M4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H5C4.72386 12.5 4.5 12.2761 4.5 12Z" fill="white"/>
+                                                </svg>
+
+                                            </button>
+                                        </div>
+                                        <div className='cart__item-results'>
+                                            <p className="cart__item-price">{item.count * item.price}</p>
+                                        </div>
+
                                     </div>
-                                </div>
-                                    <div className='cart__item-btns'>
-                                        <button className="cart__item-minus">
-                                            <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fillRule="evenodd" clipRule="evenodd" d="M0.5 1C0.5 0.723858 0.723858 0.5 1 0.5H15C15.2761 0.5 15.5 0.723858 15.5 1C15.5 1.27614 15.2761 1.5 15 1.5H1C0.723858 1.5 0.5 1.27614 0.5 1Z" fill="white"/>
-                                            </svg>
-
-                                        </button>
-                                        <p className="cart__item-num">2</p>
-                                        <button className="cart__item-plus">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fillRule="evenodd" clipRule="evenodd" d="M12 4.5C12.2761 4.5 12.5 4.72386 12.5 5V19C12.5 19.2761 12.2761 19.5 12 19.5C11.7239 19.5 11.5 19.2761 11.5 19V5C11.5 4.72386 11.7239 4.5 12 4.5Z" fill="white"/>
-                                                <path fillRule="evenodd" clipRule="evenodd" d="M4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H5C4.72386 12.5 4.5 12.2761 4.5 12Z" fill="white"/>
-                                            </svg>
-
-                                        </button>
-                                    </div>
-                                <div className='cart__item-results'>
-                                    <p className="cart__item-price">89,00 ₽</p>
-                                    <p className="cart__item-price">89,00 ₽</p>
-                                </div>
-
-                            </div>
-                            <div className="cart__item">
-                                <span className='cart__item-check'>
-                                    <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fillRule="evenodd" clipRule="evenodd" d="M11.5692 0.430959C11.6994 0.561134 11.6994 0.772189 11.5692 0.902364L4.23587 8.2357C4.10569 8.36587 3.89464 8.36587 3.76446 8.2357L0.431127 4.90236C0.300952 4.77219 0.300952 4.56113 0.431127 4.43096C0.561302 4.30078 0.772357 4.30078 0.902532 4.43096L4.00016 7.52859L11.0978 0.430959C11.228 0.300785 11.439 0.300785 11.5692 0.430959Z" fill="white"/>
-</svg>
-                                </span>
-                                <img className="cart__item-img" src={item} alt=""/>
-                                <div>
-                                    <p className="cart__item-title">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
-                                    <div className="cart__item-prices">
-                                        <p className="cart__item-subtitle">44,50 ₽ за шт.</p>
-                                        <p className="cart__item-subtitle">44,50 ₽ за шт.</p>
-                                        <p className="cart__item-subtitle">44,50 ₽ за шт.</p>
-                                    </div>
-                                </div>
-                                <div className='cart__item-btns'>
-                                    <button className="cart__item-minus">
-                                        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fillRule="evenodd" clipRule="evenodd" d="M0.5 1C0.5 0.723858 0.723858 0.5 1 0.5H15C15.2761 0.5 15.5 0.723858 15.5 1C15.5 1.27614 15.2761 1.5 15 1.5H1C0.723858 1.5 0.5 1.27614 0.5 1Z" fill="white"/>
-                                        </svg>
-
-                                    </button>
-                                    <p className="cart__item-num">2</p>
-                                    <button className="cart__item-plus">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fillRule="evenodd" clipRule="evenodd" d="M12 4.5C12.2761 4.5 12.5 4.72386 12.5 5V19C12.5 19.2761 12.2761 19.5 12 19.5C11.7239 19.5 11.5 19.2761 11.5 19V5C11.5 4.72386 11.7239 4.5 12 4.5Z" fill="white"/>
-                                            <path fillRule="evenodd" clipRule="evenodd" d="M4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H5C4.72386 12.5 4.5 12.2761 4.5 12Z" fill="white"/>
-                                        </svg>
-
-                                    </button>
-                                </div>
-                                <div className='cart__item-results'>
-                                    <p className="cart__item-price">89,00 ₽</p>
-                                    <p className="cart__item-price">89,00 ₽</p>
-                                </div>
-
-                            </div>
-                            <div className="cart__item">
-                                <span className='cart__item-check'>
-                                    <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fillRule="evenodd" clipRule="evenodd" d="M11.5692 0.430959C11.6994 0.561134 11.6994 0.772189 11.5692 0.902364L4.23587 8.2357C4.10569 8.36587 3.89464 8.36587 3.76446 8.2357L0.431127 4.90236C0.300952 4.77219 0.300952 4.56113 0.431127 4.43096C0.561302 4.30078 0.772357 4.30078 0.902532 4.43096L4.00016 7.52859L11.0978 0.430959C11.228 0.300785 11.439 0.300785 11.5692 0.430959Z" fill="white"/>
-</svg>
-                                </span>
-                                <img className="cart__item-img" src={bread} alt=""/>
-                                <div>
-                                    <p className="cart__item-title">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
-                                    <div className="cart__item-prices">
-                                        <p className="cart__item-subtitle">44,50 ₽ за шт.</p>
-                                        <p className="cart__item-subtitle">44,50 ₽ за шт.</p>
-                                        <p className="cart__item-subtitle">44,50 ₽ за шт.</p>
-                                    </div>
-                                </div>
-                                <div className='cart__item-btns'>
-                                    <button className="cart__item-minus">
-                                        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fillRule="evenodd" clipRule="evenodd" d="M0.5 1C0.5 0.723858 0.723858 0.5 1 0.5H15C15.2761 0.5 15.5 0.723858 15.5 1C15.5 1.27614 15.2761 1.5 15 1.5H1C0.723858 1.5 0.5 1.27614 0.5 1Z" fill="white"/>
-                                        </svg>
-
-                                    </button>
-                                    <p className="cart__item-num">2</p>
-                                    <button className="cart__item-plus">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fillRule="evenodd" clipRule="evenodd" d="M12 4.5C12.2761 4.5 12.5 4.72386 12.5 5V19C12.5 19.2761 12.2761 19.5 12 19.5C11.7239 19.5 11.5 19.2761 11.5 19V5C11.5 4.72386 11.7239 4.5 12 4.5Z" fill="white"/>
-                                            <path fillRule="evenodd" clipRule="evenodd" d="M4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H5C4.72386 12.5 4.5 12.2761 4.5 12Z" fill="white"/>
-                                        </svg>
-
-                                    </button>
-                                </div>
-                                <div className='cart__item-results'>
-                                    <p className="cart__item-price">89,00 ₽</p>
-                                    <p className="cart__item-price">89,00 ₽</p>
-                                </div>
-
-                            </div>
-                            <div className="cart__item">
-                                <span className='cart__item-check'>
-                                    <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fillRule="evenodd" clipRule="evenodd" d="M11.5692 0.430959C11.6994 0.561134 11.6994 0.772189 11.5692 0.902364L4.23587 8.2357C4.10569 8.36587 3.89464 8.36587 3.76446 8.2357L0.431127 4.90236C0.300952 4.77219 0.300952 4.56113 0.431127 4.43096C0.561302 4.30078 0.772357 4.30078 0.902532 4.43096L4.00016 7.52859L11.0978 0.430959C11.228 0.300785 11.439 0.300785 11.5692 0.430959Z" fill="white"/>
-</svg>
-                                </span>
-                                <img className="cart__item-img" src={bread} alt=""/>
-                                <div>
-                                    <p className="cart__item-title">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
-                                    <div className="cart__item-prices">
-                                        <p className="cart__item-subtitle">44,50 ₽ за шт.</p>
-                                        <p className="cart__item-subtitle">44,50 ₽ за шт.</p>
-                                        <p className="cart__item-subtitle">44,50 ₽ за шт.</p>
-                                    </div>
-                                </div>
-                                <div className='cart__item-btns'>
-                                    <button className="cart__item-minus">
-                                        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fillRule="evenodd" clipRule="evenodd" d="M0.5 1C0.5 0.723858 0.723858 0.5 1 0.5H15C15.2761 0.5 15.5 0.723858 15.5 1C15.5 1.27614 15.2761 1.5 15 1.5H1C0.723858 1.5 0.5 1.27614 0.5 1Z" fill="white"/>
-                                        </svg>
-
-                                    </button>
-                                    <p className="cart__item-num">2</p>
-                                    <button className="cart__item-plus">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fillRule="evenodd" clipRule="evenodd" d="M12 4.5C12.2761 4.5 12.5 4.72386 12.5 5V19C12.5 19.2761 12.2761 19.5 12 19.5C11.7239 19.5 11.5 19.2761 11.5 19V5C11.5 4.72386 11.7239 4.5 12 4.5Z" fill="white"/>
-                                            <path fillRule="evenodd" clipRule="evenodd" d="M4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H5C4.72386 12.5 4.5 12.2761 4.5 12Z" fill="white"/>
-                                        </svg>
-
-                                    </button>
-                                </div>
-                                <div className='cart__item-results'>
-                                    <p className="cart__item-price">89,00 ₽</p>
-                                    <p className="cart__item-price">89,00 ₽</p>
-                                </div>
-
-                            </div>
+                                ))
+                            }
 
                             <div className='cart__right'>
                                 <div className='cart__right-btns'>

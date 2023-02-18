@@ -5,6 +5,7 @@
 .cart{
 padding: 26px 0 116px;
   &__top{
+
     position: relative;
     &-crams{
       font-family: 'Rubik',sans-serif;
@@ -34,7 +35,7 @@ padding: 26px 0 116px;
     }
     &-lens{
       position: absolute;
-      top: 17px;
+      top: 48px;
       left: 280px;
       width: 26px;
       height: 32px;
@@ -112,6 +113,7 @@ padding: 26px 0 116px;
     padding: 3px 3px 8px 3px;
     &-check{
       display: flex;
+      z-index: 2;
       position: absolute;
       align-items: center;
       justify-content: center;
