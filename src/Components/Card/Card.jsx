@@ -1,9 +1,12 @@
 import React from 'react';
 import "./card.scss"
 import HeartFavorite from "../HeartFavorite";
+import {setProducts} from "../../redux/reducer/cart";
+import {useDispatch} from "react-redux";
 
 
 const Card = ({item}) => {
+    const dispatch = useDispatch()
 
     return (
         <div className="card">
@@ -38,7 +41,10 @@ const Card = ({item}) => {
                     <path d="M87.1033 1.81698C87.4701 1.07374 88.5299 1.07374 88.8967 1.81699L90.1185 4.29249C90.2641 4.58763 90.5457 4.7922 90.8714 4.83953L93.6033 5.2365C94.4235 5.35568 94.751 6.36365 94.1575 6.94219L92.1807 8.8691C91.945 9.09884 91.8375 9.42984 91.8931 9.75423L92.3598 12.4751C92.4999 13.292 91.6424 13.9149 90.9088 13.5293L88.4653 12.2446C88.174 12.0915 87.826 12.0915 87.5347 12.2446L85.0912 13.5293C84.3576 13.9149 83.5001 13.292 83.6402 12.4751L84.1069 9.75423C84.1625 9.42984 84.055 9.09884 83.8193 8.8691L81.8425 6.94219C81.249 6.36365 81.5765 5.35568 82.3967 5.2365L85.1286 4.83953C85.4543 4.7922 85.7359 4.58763 85.8815 4.29249L87.1033 1.81698Z" fill="#BFBFBF"/>
                 </svg>
             </div>
+
             <button  type="button" className="card-btn">В корзину</button>
+            <button onClick={()=> dispatch(setProducts(item))} type="button" className="card-btn">В корзину</button>
+
         </div>
     );
 };

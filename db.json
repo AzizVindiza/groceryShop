@@ -55,7 +55,7 @@
       "price": "58.50",
       "name": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчи...",
       "status": "new",
-      "discount": true,
+      "discount": false,
       "discountPercent": 50,
       "inStock": false
     },
@@ -132,66 +132,79 @@
   ],
   "list-of-categories": [
     {
+      "category": "milk",
       "id": 1,
       "name": "Молоко, сыр, яйцо",
       "img": "./assets/category/img/milk.png"
     },
     {
+      "category": "bread",
       "id": 2,
       "name": "Хлеб",
       "img": "./assets/category/img/bread.png"
     },
     {
+      "category": "fruits",
       "id": 3,
       "name": "Фрукты и овощи",
       "img": "./assets/category/img/fruits.png"
     },
     {
+      "category": "frozenFood",
       "id": 4,
       "name": "Замороженные продукты",
       "img": "./assets/category/img/FrozenFood.png"
     },
     {
+      "category": "beverages",
       "id": 5,
       "name": "Напитки",
       "img": "./assets/category/img/drinks.png"
     },
     {
+      "category": "confectionery",
       "id": 6,
       "name": "Кондитерские изделия",
       "img": "./assets/category/img/confectionery.png"
     },
     {
+      "category": "tea",
       "id": 7,
       "name": "Чай, кофе",
       "img": "./assets/category/img/tea.png"
     },
     {
+      "category": "grocery",
       "id": 8,
       "name": "Бакалея",
       "img": "./assets/category/img/grocery.png"
     },
     {
+      "category": "healthy",
       "id": 9,
       "name": "Здоровое питание",
       "img": "./assets/category/img/healthy.png"
     },
     {
+      "category": "petSupplies",
       "id": 10,
       "name": "Зоотовары",
       "img": "./assets/category/img/petSupplies.png"
     },
     {
+      "category": "kids",
       "id": 11,
       "name": "Детское питание",
       "img": "./assets/category/img/kids.png"
     },
     {
+      "category": "meat",
       "id": 12,
       "name": "Мясо, птица, колбаса",
       "img": "./assets/category/img/meat.png"
     },
     {
+      "category": "non-Food",
       "id": 13,
       "name": "Непродовольственные товары",
       "img": "./assets/category/img/nonFoodProducts.png"

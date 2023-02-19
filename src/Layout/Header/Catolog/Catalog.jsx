@@ -2,10 +2,13 @@ import React, {useEffect, useState} from 'react';
 import "./Catalog.scss"
 import axios from "axios";
 import {Link} from "react-router-dom";
+import {useDispatch} from "react-redux";
+import {setCategory} from "../../../redux/reducer/products";
 
 
 const Catalog = () => {
     const [activeHum, setActiveHum] = useState(false)
+
 
     const [category,setCategory] = useState( [])
     useEffect(()=>{
@@ -36,7 +39,7 @@ const Catalog = () => {
                <ul className="catalog__ul">
                    {
                        category.map(item=>(
-                           <Link to={""} key={item.id} className="catalog__li">{item.name}</Link>
+                           <Link  to={`category/${item.category}`} key={item.id} className="catalog__li">{item.name}</Link>
                        ))
                    }
                </ul>

@@ -34,6 +34,7 @@ const App = () => {
                <Route path={""} element={<Home/>}/>
                {/*Айбек*/}
                <Route path={"category"} element={<Category/>}/>
+               <Route path={"category/:id"} element={<Favorite/>}/>
                {/*Арсен*/}
                <Route path={"product"} element={<Product/>}/>
                {/*Расул*/}

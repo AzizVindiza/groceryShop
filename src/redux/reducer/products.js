@@ -4,8 +4,10 @@ import {createSlice} from "@reduxjs/toolkit";
 const initialState = {
     data:[],
     filter:{
-        name:""
+        name:"",
+        category: ""
     },
+
     listOfAllStatus:[],
     error:"",
     status:""
@@ -29,9 +31,15 @@ let productsSlice = createSlice({
                 ...state.filter,
                 name:action.payload
             }
+        },
+        setCategory:(state,action)=>{
+            state.filter = {
+                ...state.filter,
+                category: action.payload
+            }
         }
     }
 })
 
-export const {setAllProducts,getAllStatus,getSearch} = productsSlice.actions
+export const {setAllProducts,getAllStatus,getSearch,setCategory} = productsSlice.actions
 export default productsSlice.reducer
