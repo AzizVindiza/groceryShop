@@ -6,6 +6,9 @@
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   row-gap: 8px;
+  &-grade path{
+    cursor: pointer;
+  }
   &-img{
     position: relative;
     width: 272px;

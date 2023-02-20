@@ -37,9 +37,18 @@ let productsSlice = createSlice({
                 ...state.filter,
                 category: action.payload
             }
+        },
+        changeProductsGrade:(state,action)=>{
+            state.data =
+                state.data.map((item) => {
+                    if (item.id === action.payload.item.id){
+                        return {...item,grade: item.grade !== action.payload.grade ? action.payload.grade : 0}
+                    }
+                    return  item
+                } )
         }
     }
 })
 
-export const {setAllProducts,getAllStatus,getSearch,setCategory} = productsSlice.actions
+export const {setAllProducts,getAllStatus,getSearch,setCategory,changeProductsGrade} = productsSlice.actions
 export default productsSlice.reducer
