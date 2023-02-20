@@ -43,7 +43,6 @@ const Card = ({item}) => {
                 </svg>
             </div>
 
-            <button  type="button" className="card-btn">В корзину</button>
             <button onClick={()=> dispatch(setProducts(item))} type="button" className="card-btn">В корзину</button>
 
         </div>

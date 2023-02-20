@@ -7,8 +7,8 @@ const HeartFavorite = (props) => {
     const dispatch = useDispatch()
     const {data} = useSelector(state=>state.favorite)
     return (
-        <div onClick={()=>{dispatch(setFavorite(props.item))}} className={props.class} style={{width:"1.4rem"}}>
-            <Heart isActive={data.findIndex((item)=>item.id === props.item.id) > -1}/>
+        <div  className={props.class} style={{width:"1.4rem"}}>
+            <Heart onClick={()=>{dispatch(setFavorite(props.item))}} isActive={data.findIndex((item)=>item.id === props.item?.id) > -1}/>
         </div>
     );
 };

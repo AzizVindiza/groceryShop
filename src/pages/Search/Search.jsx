@@ -14,7 +14,7 @@ const Search = () => {
                 <div className="search__goods">
                     {
                         data.filter((item)=>item.name.toLowerCase().includes(filter.name.toLowerCase())).map(item=>(
-                            <Card key={item.id} img={item.img} price={item.price} name={item.name} discount={item.discount} discountPercent={item.discountPercent}/>
+                            <Card key={item.id} item={item}/>
                         ))
                     }
                 </div>

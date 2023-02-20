@@ -16,9 +16,9 @@ const ProductCard = () => {
     return (
         <>
             {
-                data.filter((item)=>item.status ==='sale').slice(0,4).map((el)=>(
+                data.filter((item)=>item.status ==='sale').slice(0,4).map((item)=>(
                     <div className="ProductCard">
-                        <Card key={el.id} item={el}/>
+                        <Card key={item.id} item={item}/>
                     </div>
                 ))
             }

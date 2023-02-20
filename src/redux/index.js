@@ -12,6 +12,7 @@ let store = configureStore({
         products: products,
         users: users,
         favorite: favorite,
+        cart
     }
 })
 
