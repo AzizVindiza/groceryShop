@@ -7,7 +7,8 @@ const initialState = {
 
     },
     totalPrice: 0,
-    totalDiscount: 0
+    totalDiscount: 0,
+    selectedAll: true
 }
 const cartSlice = createSlice({
     name : "cart",
@@ -39,7 +40,7 @@ const cartSlice = createSlice({
                     return  item
                 } )
             state.totalPrice = state.data.reduce((acc,rec)=>acc += rec.price * rec.count,0)
-            state.totalDiscount += action.payload.discount ? ((+action.payload.price) - ((+action.payload.price) / 100 * action.payload.discountPercent).toFixed(2)) : 0
+            state.totalDiscount -= action.payload.count > 1 ? action.payload.discount ? ((+action.payload.price) - ((+action.payload.price) / 100 * action.payload.discountPercent).toFixed(2)) : 0 : 0
 
         },
         removeProduct: (state,action) => {
@@ -55,9 +56,11 @@ const cartSlice = createSlice({
                 } )
         },
         checkedAll: (state,action)  => {
+
              state.data = state.data.map((item) => {
-                 return {...item, checked: true }
+                 return {...item, checked: state.selectedAll}
              } )
+            state.selectedAll = !state.selectedAll
         },
 
     }

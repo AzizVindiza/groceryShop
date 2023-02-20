@@ -85,7 +85,14 @@ const Cart = () => {
                                             </div>
                                         </div>
                                         <div className='cart__item-btns'>
-                                            <button onClick={() => dispatch(removeCount(item))}
+                                            <button onClick={() =>{
+                                                if(item.count === 1){
+                                                    alert("Минимальное количество товара 1!")
+                                                }else{
+                                                    dispatch(removeCount(item))
+                                                }
+                                            }
+                                            }
                                                     className="cart__item-minus">
                                                 <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
                                                      xmlns="http://www.w3.org/2000/svg">
@@ -146,7 +153,7 @@ const Cart = () => {
                                 <p className='cart__right-line2'></p>
                                 <div className='cart__right-order'>
                                     <p className='cart__right-info'>Итог</p>
-                                    <p className='cart__right-sum total'>{totalPrice - totalDiscount}₽</p>
+                                    <p className='cart__right-sum total'>{(totalPrice - totalDiscount).toFixed(2)}₽</p>
                                 </div>
                                 <div className='cart__right-smail'>
                                      <span>
