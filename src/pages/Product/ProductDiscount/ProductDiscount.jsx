@@ -1,9 +1,12 @@
 import React from 'react';
 import "./productDiscount.scss"
 import Title from "../ComponentsProduct/Title/Title";
-import ProductSale from "./ProductSale/ProductSale";
+import {useSelector} from "react-redux";
+import Card from "../../../Components/Card/Card";
 
 const ProductDiscount = () => {
+
+    const {data} = useSelector(store=>store.products)
 
     return (
         <section className="productDiscount">
@@ -18,7 +21,11 @@ const ProductDiscount = () => {
                     </div>
                     <div className="discount__wrapper">
 
-                        <ProductSale/>
+                        {
+                            data.filter((item)=>item.discount === true).slice(0,4).map((item)=>(
+                                <Card item={item} key={item.id}/>
+                            ))
+                        }
 
                     </div>
 

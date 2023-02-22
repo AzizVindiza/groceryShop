@@ -75,14 +75,27 @@
     margin-right: 40px;
     display: flex;
     &-left{
+
       margin-right: 16px;
       row-gap: 16px;
       display: flex;
       flex-direction: column;
     }
+    &-left img{
+      object-fit: cover;
+      width: 64px;
+      height: 87px;
+      background: #FFFFFF;
+    }
     &-right{
+      width: 504px;
+      height: 496px;
+      background: #FFFFFF;
       display: flex;
       position: relative;
+    }
+    &-right img{
+      object-fit: cover;
     }
     &-discount{
       position: absolute;
