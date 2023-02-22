@@ -23,7 +23,8 @@ const ProductDiscount = () => {
 
                         {
                             data.filter((item)=>item.discount === true).slice(0,4).map((item)=>(
-                                <Card item={item} key={item.id}/>
+                                <Card item={item} key=
+                                    {item.id}/>
                             ))
                         }
 

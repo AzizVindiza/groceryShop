@@ -9,8 +9,7 @@ import HeartFavorite from "../../../Components/HeartFavorite";
 import {Link} from "react-router-dom";
 import ProductSimilar from "./ProductSimilar/productSimilar";
 import {useDispatch, useSelector} from "react-redux";
-
-
+import {setProducts} from "../../../redux/reducer/cart";
 
 
 const ProductTitle = () => {
@@ -79,7 +78,7 @@ const ProductTitle = () => {
                                         <span>Поделиться</span>
                                     </div>
                                     <div className="product__favorite">
-                                        <HeartFavorite />
+                                        <HeartFavorite item={item} key={item.id} />
                                         <span>В избраное</span>
 
                                     </div>
@@ -113,7 +112,7 @@ const ProductTitle = () => {
                                             <span className="basket__usually-text">Обычная цена</span>
                                         </div>
                                         <div className="basket__card">
-                                            <span className="basket__card-price">{(item.price - (item.price/100*item.discountPercent))} ₽</span>
+                                            <span className="basket__card-price">{(item.price - (item.price/100*item.discountPercent)).toFixed(2)} ₽</span>
                                             <span className="basket__card-text">С картой Северяночки
                                         <svg width="22" height="22"
                                              viewBox="0 0 22 22"
@@ -129,7 +128,7 @@ const ProductTitle = () => {
                                     </div>
 
 
-                                    <button onClick={()=>dispatch(setProducts(item.products))} className="basket__btn">
+                                    <button onClick={()=>dispatch(setProducts(item))} className="basket__btn">
                                         <svg className="basket__btn-svg" width="32" height="32" viewBox="0 0 32 32" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path fillRule="evenodd" clipRule="evenodd"
@@ -166,18 +165,34 @@ const ProductTitle = () => {
 
 
                                     <div className="basket__made">
-                                        <div className="basket__brand">
-                                            <span className="basket__brand-left">Бренд</span>
-                                            <span className="basket__brand-right">ПРОСТОКВАШИНО</span>
-                                        </div>
-                                        <div className="basket__country">
-                                            <span  className="basket__brand-left">Страна производителя</span>
-                                            <span className="basket__brand-right">Россия</span>
-                                        </div>
-                                        <div className="basket__pack">
-                                            <span  className="basket__brand-left">Упаковка</span>
-                                            <span className="basket__brand-right">180 г</span>
-                                        </div>
+                                        {/*<div className="basket__brand">*/}
+                                        {/*    <span className="basket__brand-left">Бренд</span>*/}
+                                        {/*    <span className="basket__brand-right">ПРОСТОКВАШИНО</span>*/}
+                                        {/*</div>*/}
+                                        {/*<div className="basket__country">*/}
+                                        {/*    <span  className="basket__brand-left">Страна производителя</span>*/}
+                                        {/*    <span className="basket__brand-right">Россия</span>*/}
+                                        {/*</div>*/}
+                                        {/*<div className="basket__pack">*/}
+                                        {/*    <span  className="basket__brand-left">Упаковка</span>*/}
+                                        {/*    <span className="basket__brand-right">180 г</span>*/}
+                                        {/*</div>*/}
+                                        <table>
+                                            <tr>
+                                                <th>Бренд</th>
+                                                <th>ПРОСТОКВАШИНО</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Страна производителя</th>
+                                                <th>Россия</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Упаковка</th>
+                                                <th>180 г</th>
+                                            </tr>
+
+                                        </table>
+
 
 
                                     </div>

@@ -4,6 +4,8 @@ import HeartFavorite from "../HeartFavorite";
 import {setProducts} from "../../redux/reducer/cart";
 import {changeProductsGrade} from "../../redux/reducer/products";
 import {useDispatch} from "react-redux";
+import {aboutProduct} from "../../redux/reducer/oneProduct";
+import  {Link} from "react-router-dom"
 
 
 const Card = ({item}) => {
@@ -13,10 +15,13 @@ const Card = ({item}) => {
         <div className="card">
             <div className="card-img">
                 <HeartFavorite item={item} class={"card__label"}/>
-                <img src={item.img} alt="product"/>
+                <Link to={"product"}>
+                    <img onClick={()=>dispatch(aboutProduct(item))} src={item.img} alt="product"/>
+                </Link>
                 {item.discount ? (
                     <div className="card__discount">{`-${item.discountPercent}%`}</div>
                 ) : ""}
+
             </div>
             <div className="card__price">
                 {
