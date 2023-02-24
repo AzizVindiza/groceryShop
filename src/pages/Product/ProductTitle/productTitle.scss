@@ -38,6 +38,7 @@
   &__info{
     display: flex;
     margin: 24px 0;
+    align-items: center;
   }
 
   &__name{
@@ -224,42 +225,19 @@
 
     }
   }
+  &__made{
+    width: 100%;
+  }
   &__brand{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 4px 8px;
-    gap: 40px;
-
-    width: 376px;
-    height: 26px;
-
     background: #F3F2F1;
 
 
   }
   &__country{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 4px 8px;
-    gap: 40px;
-
-    width: 376px;
-    height: 26px;
 
   }
   &__pack{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 4px 8px;
-    gap: 40px;
 
-    width: 376px;
-    height: 26px;
-
-    /* Grayscale / Lightest */
 
     background: #F3F2F1;
 

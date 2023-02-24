@@ -29,10 +29,14 @@
     }
 
   }
+
   &__others{
     display: flex;
     flex-direction: column;
     row-gap: 8px;
+    & div{
+      align-items: center;
+    }
   }
   &__others div{
     display: flex;

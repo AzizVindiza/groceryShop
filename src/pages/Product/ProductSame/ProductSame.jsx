@@ -15,7 +15,7 @@ const ProductSame = () => {
         <section className='productSame'>
             <div className="container">
                 <Title name="С этим товаров покупают"/>
-                <div className="wrapper">
+                <div className="productSame__wrapper">
 
                     {
                         data.filter((item)=>item.status === "sale").slice(0,4).map((item)=>(

@@ -1,9 +1,10 @@
 .productSame{
   background: rgba(249, 244, 226, 1);
   padding-bottom: 120px;
+  &__wrapper{
+    margin-top: 40px;
+    display: flex;
+    column-gap: 40px;
+  }
 }
 
-.wrapper{
-  display: flex;
-  column-gap: 40px;
-}

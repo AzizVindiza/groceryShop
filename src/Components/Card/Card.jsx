@@ -8,6 +8,7 @@ import {aboutProduct} from "../../redux/reducer/oneProduct";
 import  {Link} from "react-router-dom"
 
 
+
 const Card = ({item}) => {
     const dispatch = useDispatch()
 
@@ -15,7 +16,7 @@ const Card = ({item}) => {
         <div className="card">
             <div className="card-img">
                 <HeartFavorite item={item} class={"card__label"}/>
-                <Link to={"product"}>
+                    <Link to={"/product"}>
                     <img onClick={()=>dispatch(aboutProduct(item))} src={item.img} alt="product"/>
                 </Link>
                 {item.discount ? (
