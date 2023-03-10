@@ -48,18 +48,6 @@ const Cart = () => {
                             </div>
                         </div>
                         <div className='cart__list'>
-
-                            {/*<div className="cart__left">*/}
-                            {/*    <div className="cart__item">*/}
-                            {/*        <img src={item} alt=""/>*/}
-                            {/*        <p>Комбайн КЗС-1218</p>*/}
-                            {/*        <div>*/}
-                            {/*            <p>44,50 ₽ за шт.</p>*/}
-                            {/*            <p>44,50 ₽ за шт.</p>*/}
-                            {/*        </div>*/}
-                            {/*    </div>*/}
-                            {/*</div>*/}
-
                             {
                                 data.map((item) => (
                                     <div className="cart__item">
@@ -133,7 +121,6 @@ const Cart = () => {
                                     </div>
                                 ))
                             }
-
                             <div className='cart__right'>
                                 <div className='cart__right-btns'>
                                     <input type="checkbox" className='cart__right-toggle'/>

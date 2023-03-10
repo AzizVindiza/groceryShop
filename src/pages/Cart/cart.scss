@@ -2,6 +2,7 @@
 
 .section-cart{
   background: #F9F4E2;
+  height: 100vh;
 
 }
 .cart{
@@ -130,6 +131,7 @@ padding: 26px 0 116px;
     margin-top: 28px;
   }
 
+
   &__item{
     display: flex;
     align-items: center;
@@ -226,6 +228,7 @@ padding: 26px 0 116px;
     &-price{
       width: 50px;
       display: flex;
+      align-items: center;
       font-family: 'Rubik',sans-serif;
       margin-left: 30px;
       font-style: normal;
